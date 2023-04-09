@@ -1,0 +1,16 @@
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Araç otomasyonu.exe.config
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Araç otomasyonu.exe
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Araç otomasyonu.pdb
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.Licensing.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.AssemblyReference.cache
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.AnaSayfa.resources
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.Properties.Resources.resources
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.GenerateResource.cache
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.CopyComplete
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.exe
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.pdb
