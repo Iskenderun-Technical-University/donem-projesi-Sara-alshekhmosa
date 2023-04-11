@@ -1,0 +1,79 @@
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Araç otomasyonu.exe.config
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Araç otomasyonu.exe
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Araç otomasyonu.pdb
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.Licensing.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuLoader.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Guna.UI2.dll
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuLoader.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.AssemblyReference.cache
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.Properties.Resources.resources
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.GenerateResource.cache
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.csproj.CopyComplete
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.exe
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç otomasyonu.pdb
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.AnaSyafa.resources
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.MüşteriEkleme.resources
