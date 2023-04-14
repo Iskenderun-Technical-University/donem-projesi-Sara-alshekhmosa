@@ -133,6 +133,16 @@ namespace Araç_otomasyonu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap macos_close1 {
+            get {
+                object obj = ResourceManager.GetObject("macos-close1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap oncoming_automobile {
             get {
                 object obj = ResourceManager.GetObject("oncoming-automobile", resourceCulture);

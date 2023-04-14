@@ -157,6 +157,12 @@
     <Compile Include="AnaSayfa.Designer.cs">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Araç kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araç kayıt.Designer.cs">
+      <DependentUpon>Araç kayıt.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüşteriEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Araç kayıt.resx">
+      <DependentUpon>Araç kayıt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüşteriEkleme.resx">
       <DependentUpon>MüşteriEkleme.cs</DependentUpon>
@@ -224,6 +233,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\macos-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macos-close1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
