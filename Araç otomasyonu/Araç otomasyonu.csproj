@@ -157,11 +157,11 @@
     <Compile Include="AnaSayfa.Designer.cs">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Araç kayıt.cs">
+    <Compile Include="MüşteriListeleme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Araç kayıt.Designer.cs">
-      <DependentUpon>Araç kayıt.cs</DependentUpon>
+    <Compile Include="MüşteriListeleme.Designer.cs">
+      <DependentUpon>MüşteriListeleme.cs</DependentUpon>
     </Compile>
     <Compile Include="MüşteriEkleme.cs">
       <SubType>Form</SubType>
@@ -174,8 +174,8 @@
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Araç kayıt.resx">
-      <DependentUpon>Araç kayıt.cs</DependentUpon>
+    <EmbeddedResource Include="MüşteriListeleme.resx">
+      <DependentUpon>MüşteriListeleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüşteriEkleme.resx">
       <DependentUpon>MüşteriEkleme.cs</DependentUpon>

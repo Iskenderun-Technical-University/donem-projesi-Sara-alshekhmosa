@@ -10,7 +10,7 @@ namespace Araç_otomasyonu
     {
         public static AnaSyafa anasayfa;
         public static MüşteriEkleme musteriekleme;
-
+        public static MüşteriListeme musterilisteleme;
 
 
         /// <summary>
@@ -24,6 +24,7 @@ namespace Araç_otomasyonu
             Application.SetCompatibleTextRenderingDefault(false);
             anasayfa = new AnaSyafa();
             musteriekleme = new MüşteriEkleme();
+            musterilisteleme = new MüşteriListeme();
             Application.Run(new AnaSyafa());
         }
     }

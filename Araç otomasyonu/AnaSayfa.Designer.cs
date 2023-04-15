@@ -218,6 +218,7 @@ namespace Araç_otomasyonu
             this.btnMl.Size = new System.Drawing.Size(161, 61);
             this.btnMl.TabIndex = 5;
             this.btnMl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMl.Click += new System.EventHandler(this.btnMl_Click);
             // 
             // btnAk
             // 

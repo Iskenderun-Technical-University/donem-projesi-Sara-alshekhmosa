@@ -31,5 +31,11 @@ namespace Araç_otomasyonu
         {
             Application.Exit();
         }
+
+        private void btnMl_Click(object sender, EventArgs e)
+        {
+
+            Program.musterilisteleme.Show();
+        }
     }
 }

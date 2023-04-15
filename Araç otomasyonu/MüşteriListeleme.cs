@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Araç_otomasyonu
 {
-    public partial class Araç_kayıt : Form
+    public partial class MüşteriListeme : Form
     {
-        public Araç_kayıt()
+        public MüşteriListeme()
         {
             InitializeComponent();
+        }
+
+        private void txtTe_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
