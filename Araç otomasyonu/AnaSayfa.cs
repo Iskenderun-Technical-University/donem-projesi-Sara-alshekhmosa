@@ -37,5 +37,10 @@ namespace Araç_otomasyonu
 
             Program.musterilisteleme.Show();
         }
+
+        private void btnAk_Click(object sender, EventArgs e)
+        {
+            Program.arackayit.Show();
+        }
     }
 }

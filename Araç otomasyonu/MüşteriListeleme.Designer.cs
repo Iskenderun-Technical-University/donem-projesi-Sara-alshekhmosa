@@ -30,7 +30,7 @@ namespace Araç_otomasyonu
         private void InitializeComponent()
         {
             this.btnGu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnİp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnİp2 = new Guna.UI2.WinForms.Guna2Button();
             this.lblAd = new System.Windows.Forms.Label();
             this.lblAdress = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,21 +63,21 @@ namespace Araç_otomasyonu
             this.btnGu.TabIndex = 26;
             this.btnGu.Text = "Güncelle";
             // 
-            // btnİp
+            // btnİp2
             // 
-            this.btnİp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnİp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnİp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnİp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnİp.FillColor = System.Drawing.Color.Maroon;
-            this.btnİp.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnİp.ForeColor = System.Drawing.Color.White;
-            this.btnİp.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnİp.Location = new System.Drawing.Point(146, 198);
-            this.btnİp.Name = "btnİp";
-            this.btnİp.Size = new System.Drawing.Size(103, 26);
-            this.btnİp.TabIndex = 25;
-            this.btnİp.Text = "İptal";
+            this.btnİp2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnİp2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnİp2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnİp2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnİp2.FillColor = System.Drawing.Color.Maroon;
+            this.btnİp2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnİp2.ForeColor = System.Drawing.Color.White;
+            this.btnİp2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnİp2.Location = new System.Drawing.Point(146, 198);
+            this.btnİp2.Name = "btnİp2";
+            this.btnİp2.Size = new System.Drawing.Size(103, 26);
+            this.btnİp2.TabIndex = 25;
+            this.btnİp2.Text = "İptal";
             // 
             // lblAd
             // 
@@ -299,7 +299,7 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnGu);
-            this.Controls.Add(this.btnİp);
+            this.Controls.Add(this.btnİp2);
             this.Controls.Add(this.lblAd);
             this.Controls.Add(this.lblAdress);
             this.Controls.Add(this.label3);
@@ -322,7 +322,7 @@ namespace Araç_otomasyonu
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button btnGu;
-        private Guna.UI2.WinForms.Guna2Button btnİp;
+        private Guna.UI2.WinForms.Guna2Button btnİp2;
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.Label lblAdress;
         private System.Windows.Forms.Label label3;
