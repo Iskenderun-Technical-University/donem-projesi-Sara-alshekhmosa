@@ -42,5 +42,11 @@ namespace Araç_otomasyonu
         {
             Program.arackayit.Show();
         }
+
+        private void btnAl_Click(object sender, EventArgs e)
+        {
+            Program.araclisteleme.Show();
+
+        }
     }
 }

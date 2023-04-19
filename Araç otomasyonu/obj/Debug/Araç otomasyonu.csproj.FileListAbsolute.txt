@@ -79,3 +79,4 @@ C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Ar
 C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.MüşteriEkleme.resources
 C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.MüşteriListeme.resources
 C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.AraçKayıt.resources
+C:\Users\المجد\Desktop\proje\Araç otomasyonu\Araç otomasyonu\obj\Debug\Araç_otomasyonu.AraçListeleme.resources

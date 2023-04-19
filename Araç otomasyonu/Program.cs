@@ -12,6 +12,7 @@ namespace Araç_otomasyonu
         public static MüşteriEkleme musteriekleme;
         public static MüşteriListeme musterilisteleme;
         public static AraçKayıt arackayit;
+        public static AraçListeleme araclisteleme;
 
 
         /// <summary>
@@ -27,6 +28,7 @@ namespace Araç_otomasyonu
             musteriekleme = new MüşteriEkleme();
             musterilisteleme = new MüşteriListeme();
             arackayit = new AraçKayıt();
+            araclisteleme = new AraçListeleme();
             Application.Run(new AnaSyafa());
         }
     }
