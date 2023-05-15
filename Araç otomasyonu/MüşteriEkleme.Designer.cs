@@ -30,7 +30,7 @@ namespace Araç_otomasyonu
         private void InitializeComponent()
         {
             this.txtTc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAdress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtAdres = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTe = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEm = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAd = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,24 +62,24 @@ namespace Araç_otomasyonu
             this.txtTc.Size = new System.Drawing.Size(310, 28);
             this.txtTc.TabIndex = 2;
             // 
-            // txtAdress
+            // txtAdres
             // 
-            this.txtAdress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAdress.DefaultText = "";
-            this.txtAdress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAdress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAdress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAdress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAdress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAdress.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAdress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAdress.Location = new System.Drawing.Point(244, 239);
-            this.txtAdress.Name = "txtAdress";
-            this.txtAdress.PasswordChar = '\0';
-            this.txtAdress.PlaceholderText = "";
-            this.txtAdress.SelectedText = "";
-            this.txtAdress.Size = new System.Drawing.Size(310, 28);
-            this.txtAdress.TabIndex = 3;
+            this.txtAdres.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAdres.DefaultText = "";
+            this.txtAdres.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAdres.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAdres.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAdres.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAdres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAdres.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAdres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAdres.Location = new System.Drawing.Point(244, 239);
+            this.txtAdres.Name = "txtAdres";
+            this.txtAdres.PasswordChar = '\0';
+            this.txtAdres.PlaceholderText = "";
+            this.txtAdres.SelectedText = "";
+            this.txtAdres.Size = new System.Drawing.Size(310, 28);
+            this.txtAdres.TabIndex = 3;
             // 
             // txtTe
             // 
@@ -165,7 +165,7 @@ namespace Araç_otomasyonu
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(90, 242);
+            this.label3.Location = new System.Drawing.Point(90, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 25);
             this.label3.TabIndex = 10;
@@ -176,7 +176,7 @@ namespace Araç_otomasyonu
             this.lblAdress.AutoSize = true;
             this.lblAdress.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdress.ForeColor = System.Drawing.Color.White;
-            this.lblAdress.Location = new System.Drawing.Point(96, 187);
+            this.lblAdress.Location = new System.Drawing.Point(96, 242);
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(89, 25);
             this.lblAdress.TabIndex = 11;
@@ -208,6 +208,7 @@ namespace Araç_otomasyonu
             this.btnİp.Size = new System.Drawing.Size(106, 45);
             this.btnİp.TabIndex = 13;
             this.btnİp.Text = "İptal";
+            this.btnİp.Click += new System.EventHandler(this.btnİp_Click);
             // 
             // btnEk
             // 
@@ -223,6 +224,7 @@ namespace Araç_otomasyonu
             this.btnEk.Size = new System.Drawing.Size(108, 45);
             this.btnEk.TabIndex = 14;
             this.btnEk.Text = "Ekle";
+            this.btnEk.Click += new System.EventHandler(this.btnEk_Click);
             // 
             // MüşteriEkleme
             // 
@@ -240,7 +242,7 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.txtAd);
             this.Controls.Add(this.txtEm);
             this.Controls.Add(this.txtTe);
-            this.Controls.Add(this.txtAdress);
+            this.Controls.Add(this.txtAdres);
             this.Controls.Add(this.txtTc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MüşteriEkleme";
@@ -253,7 +255,7 @@ namespace Araç_otomasyonu
 
         #endregion
         private Guna.UI2.WinForms.Guna2TextBox txtTc;
-        private Guna.UI2.WinForms.Guna2TextBox txtAdress;
+        private Guna.UI2.WinForms.Guna2TextBox txtAdres;
         private Guna.UI2.WinForms.Guna2TextBox txtTe;
         private Guna.UI2.WinForms.Guna2TextBox txtEm;
         private Guna.UI2.WinForms.Guna2TextBox txtAd;
@@ -262,7 +264,7 @@ namespace Araç_otomasyonu
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblAdress;
         private System.Windows.Forms.Label lblAd;
-        private Guna.UI2.WinForms.Guna2Button btnİp;
-        private Guna.UI2.WinForms.Guna2Button btnEk;
+        public Guna.UI2.WinForms.Guna2Button btnİp;
+        public Guna.UI2.WinForms.Guna2Button btnEk;
     }
 }

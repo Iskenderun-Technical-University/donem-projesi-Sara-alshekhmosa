@@ -169,6 +169,7 @@
     <Compile Include="AraçListeleme.Designer.cs">
       <DependentUpon>AraçListeleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Araç_Kiralama.cs" />
     <Compile Include="MüşteriListeleme.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -13,7 +13,8 @@ namespace Araç_otomasyonu
         public static MüşteriListeme musterilisteleme;
         public static AraçKayıt arackayit;
         public static AraçListeleme araclisteleme;
-
+        public static Araç_Kiralama arackiralama;
+        
 
         /// <summary>
         /// The main entry point for the application.
