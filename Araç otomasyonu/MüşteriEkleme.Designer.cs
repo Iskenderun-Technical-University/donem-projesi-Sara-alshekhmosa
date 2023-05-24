@@ -80,7 +80,7 @@ namespace Araç_otomasyonu
             this.txtadres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtadres.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtadres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtadres.Location = new System.Drawing.Point(139, 184);
+            this.txtadres.Location = new System.Drawing.Point(139, 182);
             this.txtadres.Name = "txtadres";
             this.txtadres.PasswordChar = '\0';
             this.txtadres.PlaceholderText = "";
@@ -99,7 +99,7 @@ namespace Araç_otomasyonu
             this.txtTe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTe.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTe.Location = new System.Drawing.Point(139, 134);
+            this.txtTe.Location = new System.Drawing.Point(139, 137);
             this.txtTe.Name = "txtTe";
             this.txtTe.PasswordChar = '\0';
             this.txtTe.PlaceholderText = "";
@@ -118,7 +118,7 @@ namespace Araç_otomasyonu
             this.txtEm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEm.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEm.Location = new System.Drawing.Point(139, 229);
+            this.txtEm.Location = new System.Drawing.Point(139, 227);
             this.txtEm.Name = "txtEm";
             this.txtEm.PasswordChar = '\0';
             this.txtEm.PlaceholderText = "";
@@ -137,7 +137,7 @@ namespace Araç_otomasyonu
             this.txtAd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAd.Location = new System.Drawing.Point(139, 89);
+            this.txtAd.Location = new System.Drawing.Point(139, 92);
             this.txtAd.Name = "txtAd";
             this.txtAd.PasswordChar = '\0';
             this.txtAd.PlaceholderText = "";
@@ -236,6 +236,7 @@ namespace Araç_otomasyonu
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.Maroon;
             this.dataGridView1.Location = new System.Drawing.Point(351, 34);
@@ -260,6 +261,7 @@ namespace Araç_otomasyonu
             this.btnSil.Size = new System.Drawing.Size(68, 26);
             this.btnSil.TabIndex = 35;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // txtTa
             // 

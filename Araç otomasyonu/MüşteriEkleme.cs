@@ -25,7 +25,7 @@ namespace Araç_otomasyonu
         public void populate()
         {
             con.Open();
-            string query = "Select *from müşteri";
+            string query = "Select *from müşterii";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(da);
             var ds = new DataSet();
@@ -52,11 +52,12 @@ namespace Araç_otomasyonu
             {
                 try {
                     con.Open();
-                    string query = "insert into müşteri values ("+txtTc.Text+",'"+txtAd.Text+"','"+txtTe.Text+"','"+txtadres.Text+"','" +txtEm.Text+"')";
+                    string query = "insert into müşterii values ("+txtTc.Text+",'"+txtAd.Text+"','"+txtTe.Text+"','"+txtadres.Text+"','" +txtEm.Text+"')";
                     SqlCommand cmd = new SqlCommand(query,con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("müşteri eklendi");
                     con.Close();
+                    
                     populate();
                 }
                 catch(Exception myex)
@@ -70,6 +71,33 @@ namespace Araç_otomasyonu
         {
             populate();
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if (txtTc.Text == "")
+            {
+                MessageBox.Show("Eksik bilgi");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "delete from müşterii where tc=" + txtTc.Text+ ";";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("müşteri silindi");
+                    con.Close();
+                    populate();
+
+                }
+                catch (Exception myex)
+                {
+                    MessageBox.Show(myex.Message);
+                }
+            }
+        }
+
     }
 
 }
