@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Araç_otomasyonu
 {
     partial class MüşteriEkleme
@@ -30,7 +32,7 @@ namespace Araç_otomasyonu
         private void InitializeComponent()
         {
             this.txtTc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAdres = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtadres = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTe = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEm = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAd = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,24 +64,24 @@ namespace Araç_otomasyonu
             this.txtTc.Size = new System.Drawing.Size(310, 28);
             this.txtTc.TabIndex = 2;
             // 
-            // txtAdres
+            // txtadres
             // 
-            this.txtAdres.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAdres.DefaultText = "";
-            this.txtAdres.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAdres.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAdres.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAdres.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAdres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAdres.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAdres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAdres.Location = new System.Drawing.Point(244, 239);
-            this.txtAdres.Name = "txtAdres";
-            this.txtAdres.PasswordChar = '\0';
-            this.txtAdres.PlaceholderText = "";
-            this.txtAdres.SelectedText = "";
-            this.txtAdres.Size = new System.Drawing.Size(310, 28);
-            this.txtAdres.TabIndex = 3;
+            this.txtadres.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtadres.DefaultText = "";
+            this.txtadres.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtadres.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtadres.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtadres.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtadres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtadres.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtadres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtadres.Location = new System.Drawing.Point(244, 239);
+            this.txtadres.Name = "txtadres";
+            this.txtadres.PasswordChar = '\0';
+            this.txtadres.PlaceholderText = "";
+            this.txtadres.SelectedText = "";
+            this.txtadres.Size = new System.Drawing.Size(310, 28);
+            this.txtadres.TabIndex = 3;
             // 
             // txtTe
             // 
@@ -242,7 +244,7 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.txtAd);
             this.Controls.Add(this.txtEm);
             this.Controls.Add(this.txtTe);
-            this.Controls.Add(this.txtAdres);
+            this.Controls.Add(this.txtadres);
             this.Controls.Add(this.txtTc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MüşteriEkleme";
@@ -254,8 +256,7 @@ namespace Araç_otomasyonu
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox txtTc;
-        private Guna.UI2.WinForms.Guna2TextBox txtAdres;
+        private Guna.UI2.WinForms.Guna2TextBox txtadres;
         private Guna.UI2.WinForms.Guna2TextBox txtTe;
         private Guna.UI2.WinForms.Guna2TextBox txtEm;
         private Guna.UI2.WinForms.Guna2TextBox txtAd;
@@ -266,5 +267,8 @@ namespace Araç_otomasyonu
         private System.Windows.Forms.Label lblAd;
         public Guna.UI2.WinForms.Guna2Button btnİp;
         public Guna.UI2.WinForms.Guna2Button btnEk;
+        public Guna.UI2.WinForms.Guna2TextBox txtTc;
+
+        public EventHandler txtTc_TextChanged { get; private set; }
     }
 }
