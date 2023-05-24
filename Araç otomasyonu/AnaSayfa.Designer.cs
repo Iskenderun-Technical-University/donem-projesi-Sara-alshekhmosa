@@ -38,11 +38,9 @@ namespace Araç_otomasyonu
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCi = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnMl = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAk = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAl = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSo = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -54,7 +52,6 @@ namespace Araç_otomasyonu
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -135,17 +132,6 @@ namespace Araç_otomasyonu
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Black;
-            this.pictureBox8.Image = global::Araç_otomasyonu.Properties.Resources.external_customer_email_marketing_flat_berkahicon_2;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 155);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(27, 29);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 15;
-            this.pictureBox8.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
@@ -193,32 +179,6 @@ namespace Araç_otomasyonu
             this.btnCi.TabIndex = 6;
             this.btnCi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCi.Click += new System.EventHandler(this.btnCi_Click);
-            // 
-            // btnMl
-            // 
-            this.btnMl.ActiveBorderThickness = 1;
-            this.btnMl.ActiveCornerRadius = 20;
-            this.btnMl.ActiveFillColor = System.Drawing.Color.DarkRed;
-            this.btnMl.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnMl.ActiveLineColor = System.Drawing.Color.White;
-            this.btnMl.BackColor = System.Drawing.Color.Black;
-            this.btnMl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMl.BackgroundImage")));
-            this.btnMl.ButtonText = "Müşteri Listeleme";
-            this.btnMl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMl.Font = new System.Drawing.Font("Lucida Calligraphy", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnMl.IdleBorderThickness = 1;
-            this.btnMl.IdleCornerRadius = 20;
-            this.btnMl.IdleFillColor = System.Drawing.Color.Black;
-            this.btnMl.IdleForecolor = System.Drawing.Color.White;
-            this.btnMl.IdleLineColor = System.Drawing.Color.Black;
-            this.btnMl.Location = new System.Drawing.Point(49, 145);
-            this.btnMl.Margin = new System.Windows.Forms.Padding(5);
-            this.btnMl.Name = "btnMl";
-            this.btnMl.Size = new System.Drawing.Size(161, 61);
-            this.btnMl.TabIndex = 5;
-            this.btnMl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnMl.Click += new System.EventHandler(this.btnMl_Click);
             // 
             // btnAk
             // 
@@ -359,12 +319,10 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCi);
-            this.Controls.Add(this.btnMl);
             this.Controls.Add(this.btnAk);
             this.Controls.Add(this.btnAl);
             this.Controls.Add(this.btnSo);
@@ -381,7 +339,6 @@ namespace Araç_otomasyonu
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -396,13 +353,11 @@ namespace Araç_otomasyonu
         private Bunifu.Framework.UI.BunifuThinButton2 btnSo;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAl;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAk;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnMl;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;

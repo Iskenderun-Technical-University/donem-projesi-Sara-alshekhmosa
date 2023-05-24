@@ -32,12 +32,7 @@ namespace Araç_otomasyonu
             Application.Exit();
         }
 
-        private void btnMl_Click(object sender, EventArgs e)
-        {
-
-            Program.musterilisteleme.Show();
-        }
-
+       
         private void btnAk_Click(object sender, EventArgs e)
         {
             Program.arackayit.Show();

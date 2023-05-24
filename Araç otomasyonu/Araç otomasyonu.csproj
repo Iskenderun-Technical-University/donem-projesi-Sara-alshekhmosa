@@ -169,12 +169,6 @@
     <Compile Include="AraçListeleme.Designer.cs">
       <DependentUpon>AraçListeleme.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüşteriListeleme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MüşteriListeleme.Designer.cs">
-      <DependentUpon>MüşteriListeleme.cs</DependentUpon>
-    </Compile>
     <Compile Include="MüşteriEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,9 +191,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AraçListeleme.resx">
       <DependentUpon>AraçListeleme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MüşteriListeleme.resx">
-      <DependentUpon>MüşteriListeleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüşteriEkleme.resx">
       <DependentUpon>MüşteriEkleme.cs</DependentUpon>

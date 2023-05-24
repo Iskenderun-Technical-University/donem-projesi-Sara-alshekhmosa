@@ -22,11 +22,24 @@ namespace Araç_otomasyonu
     }
 
     SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-QRQBUAH\SQLEXPRESS;Initial Catalog=Araç_Kiralama;Integrated Security=True");
-      
-    private void btnİp_Click(object sender, EventArgs e)
+        public void populate()
+        {
+            con.Open();
+            string query = "Select *from müşteri";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(da);
+            var ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
+
+        private void btnİp_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+      
         public void btnEk_Click(object sender, EventArgs e)
         {
            if (txtTc.Text== "" || txtAd.Text== "" || txtTe.Text== "" || txtadres.Text== ""|| txtEm.Text=="")
@@ -44,7 +57,7 @@ namespace Araç_otomasyonu
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("müşteri eklendi");
                     con.Close();
-
+                    populate();
                 }
                 catch(Exception myex)
                 {
@@ -53,6 +66,10 @@ namespace Araç_otomasyonu
             }
         }
 
+        private void MüşteriEkleme_Load(object sender, EventArgs e)
+        {
+            populate();
+        }
     }
 
 }
