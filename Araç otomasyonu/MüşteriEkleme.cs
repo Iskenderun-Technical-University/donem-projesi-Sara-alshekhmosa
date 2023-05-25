@@ -98,6 +98,16 @@ namespace Araç_otomasyonu
             }
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtTc.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            txtAd.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            txtTe.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            txtadres.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            txtEm.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+
+
+        }
     }
 
 }

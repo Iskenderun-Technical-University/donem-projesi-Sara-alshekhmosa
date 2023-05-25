@@ -60,6 +60,7 @@ namespace Araç_otomasyonu
             this.txtTc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTc.ForeColor = System.Drawing.Color.Black;
             this.txtTc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTc.Location = new System.Drawing.Point(139, 47);
             this.txtTc.Name = "txtTc";
@@ -79,6 +80,7 @@ namespace Araç_otomasyonu
             this.txtadres.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtadres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtadres.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtadres.ForeColor = System.Drawing.Color.Black;
             this.txtadres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtadres.Location = new System.Drawing.Point(139, 182);
             this.txtadres.Name = "txtadres";
@@ -98,6 +100,7 @@ namespace Araç_otomasyonu
             this.txtTe.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTe.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTe.ForeColor = System.Drawing.Color.Black;
             this.txtTe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTe.Location = new System.Drawing.Point(139, 137);
             this.txtTe.Name = "txtTe";
@@ -117,6 +120,7 @@ namespace Araç_otomasyonu
             this.txtEm.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEm.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEm.ForeColor = System.Drawing.Color.Black;
             this.txtEm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEm.Location = new System.Drawing.Point(139, 227);
             this.txtEm.Name = "txtEm";
@@ -136,6 +140,7 @@ namespace Araç_otomasyonu
             this.txtAd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAd.ForeColor = System.Drawing.Color.Black;
             this.txtAd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAd.Location = new System.Drawing.Point(139, 92);
             this.txtAd.Name = "txtAd";
@@ -243,8 +248,10 @@ namespace Araç_otomasyonu
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 26;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(539, 387);
             this.dataGridView1.TabIndex = 28;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnSil
             // 
@@ -316,6 +323,7 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.txtadres);
             this.Controls.Add(this.txtTc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.HelpButton = true;
             this.Name = "MüşteriEkleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MüşteriEkleme";
@@ -327,10 +335,6 @@ namespace Araç_otomasyonu
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox txtadres;
-        private Guna.UI2.WinForms.Guna2TextBox txtTe;
-        private Guna.UI2.WinForms.Guna2TextBox txtEm;
-        private Guna.UI2.WinForms.Guna2TextBox txtAd;
         private System.Windows.Forms.Label lblTc;
         private System.Windows.Forms.Label lblEm;
         private System.Windows.Forms.Label label3;
@@ -339,10 +343,14 @@ namespace Araç_otomasyonu
         public Guna.UI2.WinForms.Guna2Button btnİp;
         public Guna.UI2.WinForms.Guna2Button btnEk;
         public Guna.UI2.WinForms.Guna2TextBox txtTc;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI2.WinForms.Guna2Button btnSil;
         private Guna.UI2.WinForms.Guna2TextBox txtTa;
         private System.Windows.Forms.Label label1;
+        public Guna.UI2.WinForms.Guna2TextBox txtadres;
+        public Guna.UI2.WinForms.Guna2TextBox txtTe;
+        public Guna.UI2.WinForms.Guna2TextBox txtEm;
+        public Guna.UI2.WinForms.Guna2TextBox txtAd;
+        public System.Windows.Forms.DataGridView dataGridView1;
 
         public EventHandler txtTc_TextChanged { get; private set; }
     }
