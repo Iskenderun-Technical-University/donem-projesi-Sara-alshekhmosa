@@ -29,10 +29,7 @@ namespace Araç_otomasyonu
             con.Close();
 
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -96,6 +93,15 @@ namespace Araç_otomasyonu
                     MessageBox.Show(myex.Message);
                 }
             }
+        }
+
+        private void dgv2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtPl.Text = dgv2.SelectedRows[0].Cells[0].Value.ToString();
+            txtMa.Text = dgv2.SelectedRows[0].Cells[1].Value.ToString();
+            txtMo.Text = dgv2.SelectedRows[0].Cells[2].Value.ToString();
+            txtKi.Text = dgv2.SelectedRows[0].Cells[3].Value.ToString();
+            ctxtMe.SelectedItem = dgv2.SelectedRows[0].Cells[4].Value.ToString();
         }
     }
 }
