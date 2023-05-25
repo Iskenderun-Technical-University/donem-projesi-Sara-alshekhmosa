@@ -74,7 +74,7 @@ namespace Araç_otomasyonu
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            if (txtTc.Text == "")
+            if (txtTA.Text == "")
             {
                 MessageBox.Show("Eksik bilgi");
             }
@@ -83,7 +83,7 @@ namespace Araç_otomasyonu
                 try
                 {
                     con.Open();
-                    string query = "delete from müşterii where tc=" + txtTc.Text+ ";";
+                    string query = "delete from müşterii where tc=" + txtTA.Text+ ";";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("müşteri silindi");
@@ -107,6 +107,34 @@ namespace Araç_otomasyonu
             txtEm.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
 
 
+        }
+
+        private void btnGun_Click(object sender, EventArgs e)
+        {
+            if (txtTc.Text == "" || txtAd.Text == "" || txtTe.Text == "" || txtadres.Text == "" || txtEm.Text == "")
+            {
+                MessageBox.Show("Eksik bilgi");
+
+
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "update müşterii set adsoyad='" + txtAd.Text + "',telefon='" + txtTe.Text + "',adres='" + txtadres.Text + "',email='" + txtEm.Text + "' where tc = " + txtTc.Text + " ";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("müşteri güncellendi");
+                    con.Close();
+
+                    populate();
+                }
+                catch (Exception myex)
+                {
+                    MessageBox.Show(myex.Message);
+                }
+            }
         }
     }
 

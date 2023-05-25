@@ -45,8 +45,9 @@ namespace Araç_otomasyonu
             this.btnEk = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSil = new Guna.UI2.WinForms.Guna2Button();
-            this.txtTa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTA = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGun = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,9 +216,9 @@ namespace Araç_otomasyonu
             this.btnİp.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnİp.ForeColor = System.Drawing.Color.White;
             this.btnİp.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnİp.Location = new System.Drawing.Point(160, 285);
+            this.btnİp.Location = new System.Drawing.Point(120, 285);
             this.btnİp.Name = "btnİp";
-            this.btnİp.Size = new System.Drawing.Size(106, 45);
+            this.btnİp.Size = new System.Drawing.Size(100, 45);
             this.btnİp.TabIndex = 13;
             this.btnİp.Text = "İptal";
             this.btnİp.Click += new System.EventHandler(this.btnİp_Click);
@@ -231,9 +232,9 @@ namespace Araç_otomasyonu
             this.btnEk.FillColor = System.Drawing.Color.Maroon;
             this.btnEk.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEk.ForeColor = System.Drawing.Color.White;
-            this.btnEk.Location = new System.Drawing.Point(35, 285);
+            this.btnEk.Location = new System.Drawing.Point(12, 285);
             this.btnEk.Name = "btnEk";
-            this.btnEk.Size = new System.Drawing.Size(108, 45);
+            this.btnEk.Size = new System.Drawing.Size(102, 45);
             this.btnEk.TabIndex = 14;
             this.btnEk.Text = "Ekle";
             this.btnEk.Click += new System.EventHandler(this.btnEk_Click);
@@ -270,24 +271,24 @@ namespace Araç_otomasyonu
             this.btnSil.Text = "Sil";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
-            // txtTa
+            // txtTA
             // 
-            this.txtTa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTa.DefaultText = "";
-            this.txtTa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTa.Location = new System.Drawing.Point(120, 386);
-            this.txtTa.Name = "txtTa";
-            this.txtTa.PasswordChar = '\0';
-            this.txtTa.PlaceholderText = "";
-            this.txtTa.SelectedText = "";
-            this.txtTa.Size = new System.Drawing.Size(144, 16);
-            this.txtTa.TabIndex = 34;
+            this.txtTA.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTA.DefaultText = "";
+            this.txtTA.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTA.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTA.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTA.Location = new System.Drawing.Point(120, 386);
+            this.txtTA.Name = "txtTA";
+            this.txtTA.PasswordChar = '\0';
+            this.txtTA.PlaceholderText = "";
+            this.txtTA.SelectedText = "";
+            this.txtTA.Size = new System.Drawing.Size(144, 16);
+            this.txtTA.TabIndex = 34;
             // 
             // label1
             // 
@@ -296,9 +297,26 @@ namespace Araç_otomasyonu
             this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(32, 386);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 17);
+            this.label1.Size = new System.Drawing.Size(55, 17);
             this.label1.TabIndex = 33;
-            this.label1.Text = "TC ARA";
+            this.label1.Text = "TC Ara";
+            // 
+            // btnGun
+            // 
+            this.btnGun.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGun.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGun.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGun.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGun.FillColor = System.Drawing.Color.Maroon;
+            this.btnGun.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGun.ForeColor = System.Drawing.Color.White;
+            this.btnGun.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnGun.Location = new System.Drawing.Point(226, 285);
+            this.btnGun.Name = "btnGun";
+            this.btnGun.Size = new System.Drawing.Size(106, 45);
+            this.btnGun.TabIndex = 36;
+            this.btnGun.Text = "Güncelle";
+            this.btnGun.Click += new System.EventHandler(this.btnGun_Click);
             // 
             // MüşteriEkleme
             // 
@@ -306,8 +324,9 @@ namespace Araç_otomasyonu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(917, 495);
+            this.Controls.Add(this.btnGun);
             this.Controls.Add(this.btnSil);
-            this.Controls.Add(this.txtTa);
+            this.Controls.Add(this.txtTA);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnEk);
@@ -344,13 +363,14 @@ namespace Araç_otomasyonu
         public Guna.UI2.WinForms.Guna2Button btnEk;
         public Guna.UI2.WinForms.Guna2TextBox txtTc;
         private Guna.UI2.WinForms.Guna2Button btnSil;
-        private Guna.UI2.WinForms.Guna2TextBox txtTa;
+        private Guna.UI2.WinForms.Guna2TextBox txtTA;
         private System.Windows.Forms.Label label1;
         public Guna.UI2.WinForms.Guna2TextBox txtadres;
         public Guna.UI2.WinForms.Guna2TextBox txtTe;
         public Guna.UI2.WinForms.Guna2TextBox txtEm;
         public Guna.UI2.WinForms.Guna2TextBox txtAd;
         public System.Windows.Forms.DataGridView dataGridView1;
+        public Guna.UI2.WinForms.Guna2Button btnGun;
 
         public EventHandler txtTc_TextChanged { get; private set; }
     }
