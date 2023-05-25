@@ -40,7 +40,6 @@ namespace Araç_otomasyonu
             this.txtMo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPl = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSil2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtMa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtKi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -79,6 +78,7 @@ namespace Araç_otomasyonu
             this.btnGu2.Size = new System.Drawing.Size(102, 26);
             this.btnGu2.TabIndex = 64;
             this.btnGu2.Text = "Güncelle";
+            this.btnGu2.Click += new System.EventHandler(this.btnGu2_Click);
             // 
             // btnİp4
             // 
@@ -222,21 +222,6 @@ namespace Araç_otomasyonu
             this.btnSil2.Text = "Sil";
             this.btnSil2.Click += new System.EventHandler(this.btnSil2_Click);
             // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(822, 12);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(148, 36);
-            this.guna2ComboBox1.TabIndex = 68;
-            // 
             // txtMa
             // 
             this.txtMa.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -350,7 +335,6 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtKi);
             this.Controls.Add(this.txtMa);
-            this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.btnSil2);
             this.Controls.Add(this.btnGu2);
             this.Controls.Add(this.btnİp4);
@@ -387,7 +371,6 @@ namespace Araç_otomasyonu
         private Guna.UI2.WinForms.Guna2TextBox txtMo;
         private Guna.UI2.WinForms.Guna2TextBox txtPl;
         private Guna.UI2.WinForms.Guna2Button btnSil2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtMa;
         private Guna.UI2.WinForms.Guna2TextBox txtKi;
         private System.Windows.Forms.Label label1;

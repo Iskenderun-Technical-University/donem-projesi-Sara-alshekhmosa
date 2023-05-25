@@ -20,7 +20,7 @@ namespace Araç_otomasyonu
         public void populate()
         {
             con.Open();
-            string query = "Select *from araçlar";
+            string query = "Select *from araç";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(da);
             var ds = new DataSet();
@@ -44,7 +44,7 @@ namespace Araç_otomasyonu
                 try
                 {
                     con.Open();
-                    string query = "insert into araçlar values (" + txtPl.Text + ",'" + txtMa.Text + "','" + txtMo.Text + "','" + txtKi.Text + "','" + ctxtMe.SelectedItem.ToString() + "')";
+                    string query = "insert into araç values (" + txtPl.Text + ",'" + txtMa.Text + "','" + txtMo.Text + "','" + txtKi.Text + "','" + ctxtMe.SelectedItem.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("araç eklendi");
@@ -80,7 +80,7 @@ namespace Araç_otomasyonu
                 try
                 {
                     con.Open();
-                    string query = "delete from araçlar where plaka ='" + txtPA.Text + "';";
+                    string query = "delete from araç where plaka ='" + txtPA.Text + "';";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("müşteri silindi");
@@ -103,5 +103,34 @@ namespace Araç_otomasyonu
             txtKi.Text = dgv2.SelectedRows[0].Cells[3].Value.ToString();
             ctxtMe.SelectedItem = dgv2.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        private void btnGu2_Click(object sender, EventArgs e)
+        {
+            if (txtPl.Text == "" || txtMa.Text == "" || txtMo.Text == "" || txtKi.Text == "")
+            {
+                MessageBox.Show("Eksik bilgi");
+
+
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "update araç set marka ='" + txtMa.Text + "',model ='" + txtMo.Text + "',kiraÜcreti ='" + txtKi.Text + "',mevcut ='" + ctxtMe.SelectedItem.ToString() + "' where plaka = " + txtPl.Text + " ";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("araç güncellendi");
+                    con.Close();
+
+                    populate();
+                }
+                catch (Exception myex)
+                {
+                    MessageBox.Show(myex.Message);
+                }
+            }
+        }
     }
-}
+    }
+
