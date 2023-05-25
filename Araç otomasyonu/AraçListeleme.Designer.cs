@@ -29,36 +29,37 @@ namespace Araç_otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv2 = new System.Windows.Forms.DataGridView();
             this.btnGu2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnİp4 = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
             this.lblMa = new System.Windows.Forms.Label();
             this.lblMo = new System.Windows.Forms.Label();
             this.lblKu = new System.Windows.Forms.Label();
-            this.txtKu = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ctxtMe = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtMo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPl = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSil2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtKi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv2
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(288, 54);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(587, 473);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv2.BackgroundColor = System.Drawing.Color.White;
+            this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv2.GridColor = System.Drawing.Color.White;
+            this.dgv2.Location = new System.Drawing.Point(288, 54);
+            this.dgv2.Name = "dgv2";
+            this.dgv2.RowHeadersWidth = 51;
+            this.dgv2.RowTemplate.Height = 26;
+            this.dgv2.Size = new System.Drawing.Size(587, 473);
+            this.dgv2.TabIndex = 0;
+            this.dgv2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnGu2
             // 
@@ -90,6 +91,7 @@ namespace Araç_otomasyonu
             this.btnİp4.Size = new System.Drawing.Size(107, 26);
             this.btnİp4.TabIndex = 63;
             this.btnİp4.Text = "İptal";
+            this.btnİp4.Click += new System.EventHandler(this.btnİp4_Click);
             // 
             // label9
             // 
@@ -139,20 +141,25 @@ namespace Araç_otomasyonu
             this.lblKu.TabIndex = 55;
             this.lblKu.Text = "KİRA ÜCRETİ";
             // 
-            // txtKu
+            // ctxtMe
             // 
-            this.txtKu.BackColor = System.Drawing.Color.Transparent;
-            this.txtKu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtKu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtKu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtKu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtKu.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtKu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtKu.ItemHeight = 30;
-            this.txtKu.Location = new System.Drawing.Point(120, 265);
-            this.txtKu.Name = "txtKu";
-            this.txtKu.Size = new System.Drawing.Size(148, 36);
-            this.txtKu.TabIndex = 54;
+            this.ctxtMe.AutoRoundedCorners = true;
+            this.ctxtMe.BackColor = System.Drawing.Color.Transparent;
+            this.ctxtMe.BorderRadius = 17;
+            this.ctxtMe.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ctxtMe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ctxtMe.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ctxtMe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ctxtMe.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctxtMe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ctxtMe.ItemHeight = 30;
+            this.ctxtMe.Items.AddRange(new object[] {
+            "evet",
+            "hayır"});
+            this.ctxtMe.Location = new System.Drawing.Point(120, 265);
+            this.ctxtMe.Name = "ctxtMe";
+            this.ctxtMe.Size = new System.Drawing.Size(148, 36);
+            this.ctxtMe.TabIndex = 54;
             // 
             // txtMo
             // 
@@ -225,45 +232,45 @@ namespace Araç_otomasyonu
             this.guna2ComboBox1.Size = new System.Drawing.Size(148, 36);
             this.guna2ComboBox1.TabIndex = 68;
             // 
-            // guna2TextBox1
+            // txtMa
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(120, 120);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(148, 27);
-            this.guna2TextBox1.TabIndex = 69;
+            this.txtMa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMa.DefaultText = "";
+            this.txtMa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMa.ForeColor = System.Drawing.Color.Black;
+            this.txtMa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMa.Location = new System.Drawing.Point(120, 120);
+            this.txtMa.Name = "txtMa";
+            this.txtMa.PasswordChar = '\0';
+            this.txtMa.PlaceholderText = "";
+            this.txtMa.SelectedText = "";
+            this.txtMa.Size = new System.Drawing.Size(148, 27);
+            this.txtMa.TabIndex = 69;
             // 
-            // guna2TextBox2
+            // txtKi
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(120, 226);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(148, 23);
-            this.guna2TextBox2.TabIndex = 70;
+            this.txtKi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtKi.DefaultText = "";
+            this.txtKi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtKi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtKi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtKi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtKi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtKi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtKi.ForeColor = System.Drawing.Color.Black;
+            this.txtKi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtKi.Location = new System.Drawing.Point(120, 226);
+            this.txtKi.Name = "txtKi";
+            this.txtKi.PasswordChar = '\0';
+            this.txtKi.PlaceholderText = "";
+            this.txtKi.SelectedText = "";
+            this.txtKi.Size = new System.Drawing.Size(148, 23);
+            this.txtKi.TabIndex = 70;
             // 
             // label1
             // 
@@ -277,15 +284,33 @@ namespace Araç_otomasyonu
             this.label1.TabIndex = 71;
             this.label1.Text = "Mevcut";
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Maroon;
+            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Location = new System.Drawing.Point(89, 433);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(107, 26);
+            this.guna2Button1.TabIndex = 72;
+            this.guna2Button1.Text = "İptal";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // AraçListeleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(982, 551);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtKi);
+            this.Controls.Add(this.txtMa);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.btnSil2);
             this.Controls.Add(this.btnGu2);
@@ -294,16 +319,17 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.lblMa);
             this.Controls.Add(this.lblMo);
             this.Controls.Add(this.lblKu);
-            this.Controls.Add(this.txtKu);
+            this.Controls.Add(this.ctxtMe);
             this.Controls.Add(this.txtMo);
             this.Controls.Add(this.txtPl);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv2);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AraçListeleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AraçListeleme";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.AraçListeleme_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,20 +337,21 @@ namespace Araç_otomasyonu
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv2;
         private Guna.UI2.WinForms.Guna2Button btnGu2;
         private Guna.UI2.WinForms.Guna2Button btnİp4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblMa;
         private System.Windows.Forms.Label lblMo;
         private System.Windows.Forms.Label lblKu;
-        private Guna.UI2.WinForms.Guna2ComboBox txtKu;
+        private Guna.UI2.WinForms.Guna2ComboBox ctxtMe;
         private Guna.UI2.WinForms.Guna2TextBox txtMo;
         private Guna.UI2.WinForms.Guna2TextBox txtPl;
         private Guna.UI2.WinForms.Guna2Button btnSil2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtMa;
+        private Guna.UI2.WinForms.Guna2TextBox txtKi;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
