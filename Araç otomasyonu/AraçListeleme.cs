@@ -71,5 +71,31 @@ namespace Araç_otomasyonu
         {
             this.Close();
         }
+
+        private void btnSil2_Click(object sender, EventArgs e)
+        {
+            if (txtPA.Text == "")
+            {
+                MessageBox.Show("Eksik bilgi");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "delete from araçlar where plaka ='" + txtPA.Text + "';";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("müşteri silindi");
+                    con.Close();
+                    populate();
+
+                }
+                catch (Exception myex)
+                {
+                    MessageBox.Show(myex.Message);
+                }
+            }
+        }
     }
 }
