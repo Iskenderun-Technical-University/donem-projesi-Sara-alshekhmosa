@@ -19,6 +19,18 @@ namespace Araç_otomasyonu
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-QRQBUAH\SQLEXPRESS;Initial Catalog=Araç_Kiralama;Integrated Security=True");
+        public void populate()
+        {
+            con.Open();
+            string query = "Select *from kira";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(da);
+            var ds = new DataSet();
+            da.Fill(ds);
+            dgv3.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
         private void fillcombo()
         {
             con.Open();
@@ -37,6 +49,7 @@ namespace Araç_otomasyonu
         {
             fillcombo();
             fillcustomer();
+            populate();
         }
         private void fillcustomer()
         {
@@ -75,6 +88,35 @@ namespace Araç_otomasyonu
         private void ctxtmusteri_SelectionChangeCommitted(object sender, EventArgs e)
         {
             customerName();
+
+        }
+
+        private void btnEk_Click(object sender, EventArgs e)
+        {
+            if (txtId.Text == "" || txtAd2.Text == "" || txtuc.Text == "")
+            {
+                MessageBox.Show("Eksik bilgi");
+
+
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "insert into kira values (" + txtId.Text + ",'" + ctxtAP.SelectedValue.ToString() + "','" + ctxtmusteri.SelectedValue.ToString() + "','" + txtAd2.Text + "','" + gTime.Text + "','" +  dgun.Text + "','" + txtuc.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("araç kiralandı");
+                    con.Close();
+
+                    populate();
+                }
+                catch (Exception myex)
+                {
+                    MessageBox.Show(myex.Message);
+                }
+            }
 
         }
     }
