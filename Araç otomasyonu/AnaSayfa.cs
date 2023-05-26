@@ -43,5 +43,10 @@ namespace Araç_otomasyonu
             Program.araclisteleme.Show();
 
         }
+
+        private void btnSo_Click(object sender, EventArgs e)
+        {
+            Program.kiralama.Show();
+        }
     }
 }

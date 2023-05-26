@@ -13,6 +13,8 @@ namespace Araç_otomasyonu
       
         public static AraçKayıt arackayit;
         public static AraçListeleme araclisteleme;
+        public static Kiralama kiralama;
+
         
         
 
@@ -30,6 +32,7 @@ namespace Araç_otomasyonu
         
             arackayit = new AraçKayıt();
             araclisteleme = new AraçListeleme();
+            kiralama = new Kiralama();
             Application.Run(new AnaSyafa());
         }
     }

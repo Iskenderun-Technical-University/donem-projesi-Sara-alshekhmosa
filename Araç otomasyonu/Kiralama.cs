@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Araç_otomasyonu
 {
-    public partial class sözleşme : Form
+    public partial class Kiralama : Form
     {
-        public sözleşme()
+        public Kiralama()
         {
             InitializeComponent();
         }
@@ -38,6 +38,16 @@ namespace Araç_otomasyonu
         }
 
         private void btnGu2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Kiralama_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

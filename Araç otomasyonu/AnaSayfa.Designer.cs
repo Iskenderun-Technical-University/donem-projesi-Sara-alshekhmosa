@@ -241,7 +241,7 @@ namespace Araç_otomasyonu
             this.btnSo.ActiveLineColor = System.Drawing.Color.White;
             this.btnSo.BackColor = System.Drawing.Color.Black;
             this.btnSo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSo.BackgroundImage")));
-            this.btnSo.ButtonText = "Sözleşme";
+            this.btnSo.ButtonText = "kiralama";
             this.btnSo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSo.Font = new System.Drawing.Font("Lucida Calligraphy", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSo.ForeColor = System.Drawing.Color.SeaGreen;
@@ -256,6 +256,7 @@ namespace Araç_otomasyonu
             this.btnSo.Size = new System.Drawing.Size(162, 59);
             this.btnSo.TabIndex = 2;
             this.btnSo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSo.Click += new System.EventHandler(this.btnSo_Click);
             // 
             // btnSa
             // 
