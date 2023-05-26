@@ -42,7 +42,6 @@ namespace Araç_otomasyonu
             this.lblid = new System.Windows.Forms.Label();
             this.txtAd2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtadres2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTc2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.ctxtAP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@ namespace Araç_otomasyonu
             this.gTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.ctxtmusteri = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,7 +132,7 @@ namespace Araç_otomasyonu
             this.dgv3.RowTemplate.Height = 26;
             this.dgv3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv3.Size = new System.Drawing.Size(539, 439);
-            this.dgv3.TabIndex = 83;
+            this.dgv3.TabIndex = 95;
             // 
             // btnEk
             // 
@@ -172,9 +172,9 @@ namespace Araç_otomasyonu
             this.lblAd.ForeColor = System.Drawing.Color.White;
             this.lblAd.Location = new System.Drawing.Point(16, 187);
             this.lblAd.Name = "lblAd";
-            this.lblAd.Size = new System.Drawing.Size(98, 20);
+            this.lblAd.Size = new System.Drawing.Size(92, 20);
             this.lblAd.TabIndex = 80;
-            this.lblAd.Text = "AD soyad";
+            this.lblAd.Text = "AdSoyad";
             // 
             // lblAdress
             // 
@@ -249,26 +249,6 @@ namespace Araç_otomasyonu
             this.txtadres2.Size = new System.Drawing.Size(193, 28);
             this.txtadres2.TabIndex = 72;
             // 
-            // txtTc2
-            // 
-            this.txtTc2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTc2.DefaultText = "";
-            this.txtTc2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTc2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTc2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTc2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTc2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTc2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTc2.ForeColor = System.Drawing.Color.Black;
-            this.txtTc2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTc2.Location = new System.Drawing.Point(152, 139);
-            this.txtTc2.Name = "txtTc2";
-            this.txtTc2.PasswordChar = '\0';
-            this.txtTc2.PlaceholderText = "";
-            this.txtTc2.SelectedText = "";
-            this.txtTc2.Size = new System.Drawing.Size(193, 28);
-            this.txtTc2.TabIndex = 71;
-            // 
             // ctxtAP
             // 
             this.ctxtAP.AutoRoundedCorners = true;
@@ -288,6 +268,7 @@ namespace Araç_otomasyonu
             this.ctxtAP.Name = "ctxtAP";
             this.ctxtAP.Size = new System.Drawing.Size(192, 36);
             this.ctxtAP.TabIndex = 88;
+            this.ctxtAP.SelectionChangeCommitted += new System.EventHandler(this.ctxtAP_SelectionChangeCommitted);
             // 
             // label2
             // 
@@ -299,7 +280,6 @@ namespace Araç_otomasyonu
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 89;
             this.label2.Text = "Araç plakası";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -364,12 +344,34 @@ namespace Araç_otomasyonu
             this.label1.TabIndex = 93;
             this.label1.Text = "dönüş tarihi";
             // 
+            // ctxtmusteri
+            // 
+            this.ctxtmusteri.AutoRoundedCorners = true;
+            this.ctxtmusteri.BackColor = System.Drawing.Color.Transparent;
+            this.ctxtmusteri.BorderRadius = 17;
+            this.ctxtmusteri.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ctxtmusteri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ctxtmusteri.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ctxtmusteri.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ctxtmusteri.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctxtmusteri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ctxtmusteri.ItemHeight = 30;
+            this.ctxtmusteri.Items.AddRange(new object[] {
+            "evet",
+            "hayır"});
+            this.ctxtmusteri.Location = new System.Drawing.Point(153, 141);
+            this.ctxtmusteri.Name = "ctxtmusteri";
+            this.ctxtmusteri.Size = new System.Drawing.Size(192, 36);
+            this.ctxtmusteri.TabIndex = 96;
+            this.ctxtmusteri.SelectionChangeCommitted += new System.EventHandler(this.ctxtmusteri_SelectionChangeCommitted);
+            // 
             // Kiralama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(929, 584);
+            this.Controls.Add(this.ctxtmusteri);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gTime);
@@ -389,7 +391,6 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.lblid);
             this.Controls.Add(this.txtAd2);
             this.Controls.Add(this.txtadres2);
-            this.Controls.Add(this.txtTc2);
             this.Controls.Add(this.btnAT);
             this.ForeColor = System.Drawing.Color.Wheat;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -417,7 +418,6 @@ namespace Araç_otomasyonu
         private System.Windows.Forms.Label lblid;
         public Guna.UI2.WinForms.Guna2TextBox txtAd2;
         public Guna.UI2.WinForms.Guna2TextBox txtadres2;
-        public Guna.UI2.WinForms.Guna2TextBox txtTc2;
         private Guna.UI2.WinForms.Guna2ComboBox ctxtAP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -425,5 +425,6 @@ namespace Araç_otomasyonu
         private Guna.UI2.WinForms.Guna2DateTimePicker gTime;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ComboBox ctxtmusteri;
     }
 }
