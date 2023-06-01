@@ -35,7 +35,7 @@ namespace Araç_otomasyonu
        
         private void btnAk_Click(object sender, EventArgs e)
         {
-            Program.arackayit.Show();
+            Program.iadee.Show();
         }
 
         private void btnAl_Click(object sender, EventArgs e)

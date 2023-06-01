@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Araç_otomasyonu
 {
     public partial class Kiralama : Form
@@ -104,7 +105,7 @@ namespace Araç_otomasyonu
                 try
                 {
                     con.Open();
-                    string query = "insert into kira values (" + txtId.Text + ",'" + ctxtAP.SelectedValue.ToString() + "','" + ctxtmusteri.SelectedValue.ToString() + "','" + txtAd2.Text + "','" + gTime.Text + "','" +  dgun.Text + "','" + txtuc.Text + "')";
+                    string query = "insert into kira  values (" + txtId.Text + ",'" + ctxtAP.SelectedValue.ToString() + "','" + txtAd2.Text + "','" +  gTime.Text.ToString() + "','" + this.dgun.Text.ToString() + "','" + txtuc.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("araç kiralandı");
@@ -118,6 +119,11 @@ namespace Araç_otomasyonu
                 }
             }
 
+        }
+
+        private void btnİp_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
