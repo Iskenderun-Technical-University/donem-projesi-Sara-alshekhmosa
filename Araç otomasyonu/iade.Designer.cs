@@ -64,6 +64,7 @@ namespace Araç_otomasyonu
             this.btnka2.Size = new System.Drawing.Size(97, 26);
             this.btnka2.TabIndex = 46;
             this.btnka2.Text = "Kayıt";
+            this.btnka2.Click += new System.EventHandler(this.btnka2_Click);
             // 
             // btnİp3
             // 

@@ -71,5 +71,11 @@ namespace Araç_otomasyonu
         {
             this.Close();
         }
+
+        private void btnka2_Click(object sender, EventArgs e)
+        {
+           
+
+        }
     }
 }

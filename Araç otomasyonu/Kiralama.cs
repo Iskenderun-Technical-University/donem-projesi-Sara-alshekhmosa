@@ -105,7 +105,7 @@ namespace Araç_otomasyonu
                 try
                 {
                     con.Open();
-                    string query = "insert into kira  values (" + txtId.Text + ",'" + ctxtAP.SelectedValue.ToString() + "','" + txtAd2.Text + "','" +  gTime.Text.ToString() + "','" + this.dgun.Text.ToString() + "','" + txtuc.Text + "')";
+                    string query = "insert into kira   values (" + txtId.Text + ",'" +  ctxtAP.SelectedValue.ToString() + "','" + txtAd2.Text + "','"  + gTime.Text + "','" + dgun.Text + "','" + txtuc.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("araç kiralandı");

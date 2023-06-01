@@ -114,7 +114,7 @@ namespace Araç_otomasyonu
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Black;
             this.pictureBox4.Image = global::Araç_otomasyonu.Properties.Resources.economic_improvement;
-            this.pictureBox4.Location = new System.Drawing.Point(13, 391);
+            this.pictureBox4.Location = new System.Drawing.Point(4, 165);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(27, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +189,7 @@ namespace Araç_otomasyonu
             this.btnAk.ActiveLineColor = System.Drawing.Color.White;
             this.btnAk.BackColor = System.Drawing.Color.Black;
             this.btnAk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAk.BackgroundImage")));
-            this.btnAk.ButtonText = "Araç Kayıt";
+            this.btnAk.ButtonText = "iade ";
             this.btnAk.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAk.Font = new System.Drawing.Font("Lucida Calligraphy", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAk.ForeColor = System.Drawing.Color.SeaGreen;
@@ -198,7 +198,7 @@ namespace Araç_otomasyonu
             this.btnAk.IdleFillColor = System.Drawing.Color.Black;
             this.btnAk.IdleForecolor = System.Drawing.Color.White;
             this.btnAk.IdleLineColor = System.Drawing.Color.Black;
-            this.btnAk.Location = new System.Drawing.Point(46, 204);
+            this.btnAk.Location = new System.Drawing.Point(46, 321);
             this.btnAk.Margin = new System.Windows.Forms.Padding(5);
             this.btnAk.Name = "btnAk";
             this.btnAk.Size = new System.Drawing.Size(162, 57);
@@ -224,7 +224,7 @@ namespace Araç_otomasyonu
             this.btnAl.IdleFillColor = System.Drawing.Color.Black;
             this.btnAl.IdleForecolor = System.Drawing.Color.White;
             this.btnAl.IdleLineColor = System.Drawing.Color.Black;
-            this.btnAl.Location = new System.Drawing.Point(46, 262);
+            this.btnAl.Location = new System.Drawing.Point(39, 159);
             this.btnAl.Margin = new System.Windows.Forms.Padding(5);
             this.btnAl.Name = "btnAl";
             this.btnAl.Size = new System.Drawing.Size(162, 57);
@@ -250,7 +250,7 @@ namespace Araç_otomasyonu
             this.btnSo.IdleFillColor = System.Drawing.Color.Black;
             this.btnSo.IdleForecolor = System.Drawing.Color.White;
             this.btnSo.IdleLineColor = System.Drawing.Color.Black;
-            this.btnSo.Location = new System.Drawing.Point(46, 320);
+            this.btnSo.Location = new System.Drawing.Point(46, 273);
             this.btnSo.Margin = new System.Windows.Forms.Padding(5);
             this.btnSo.Name = "btnSo";
             this.btnSo.Size = new System.Drawing.Size(162, 59);
@@ -276,12 +276,13 @@ namespace Araç_otomasyonu
             this.btnSa.IdleFillColor = System.Drawing.Color.Black;
             this.btnSa.IdleForecolor = System.Drawing.Color.White;
             this.btnSa.IdleLineColor = System.Drawing.Color.Black;
-            this.btnSa.Location = new System.Drawing.Point(48, 377);
+            this.btnSa.Location = new System.Drawing.Point(39, 214);
             this.btnSa.Margin = new System.Windows.Forms.Padding(5);
             this.btnSa.Name = "btnSa";
             this.btnSa.Size = new System.Drawing.Size(162, 58);
             this.btnSa.TabIndex = 1;
             this.btnSa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSa.Click += new System.EventHandler(this.btnSa_Click);
             // 
             // btnME
             // 
