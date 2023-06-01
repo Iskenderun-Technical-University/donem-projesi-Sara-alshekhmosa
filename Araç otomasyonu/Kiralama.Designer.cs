@@ -48,8 +48,8 @@ namespace Araç_otomasyonu
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ctxtmusteri = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gTime = new System.Windows.Forms.DateTimePicker();
-            this.dgun = new System.Windows.Forms.DateTimePicker();
+            this.gTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dgun = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -278,7 +278,7 @@ namespace Araç_otomasyonu
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(16, 82);
+            this.label2.Location = new System.Drawing.Point(12, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 89;
@@ -340,17 +340,32 @@ namespace Araç_otomasyonu
             // 
             // gTime
             // 
-            this.gTime.Location = new System.Drawing.Point(153, 248);
+            this.gTime.Checked = true;
+            this.gTime.CustomFormat = "dd-MM-yyyy";
+            this.gTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.gTime.Location = new System.Drawing.Point(149, 237);
+            this.gTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gTime.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gTime.Name = "gTime";
-            this.gTime.Size = new System.Drawing.Size(200, 24);
+            this.gTime.Size = new System.Drawing.Size(200, 36);
             this.gTime.TabIndex = 97;
+            this.gTime.Value = new System.DateTime(2023, 6, 1, 23, 29, 33, 582);
+            this.gTime.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged_1);
             // 
             // dgun
             // 
-            this.dgun.Location = new System.Drawing.Point(153, 296);
+            this.dgun.Checked = true;
+            this.dgun.CustomFormat = "dd-MM-yyyy";
+            this.dgun.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgun.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dgun.Location = new System.Drawing.Point(149, 287);
+            this.dgun.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dgun.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dgun.Name = "dgun";
-            this.dgun.Size = new System.Drawing.Size(200, 24);
+            this.dgun.Size = new System.Drawing.Size(200, 36);
             this.dgun.TabIndex = 98;
+            this.dgun.Value = new System.DateTime(2023, 6, 1, 23, 29, 45, 951);
             // 
             // Kiralama
             // 
@@ -410,8 +425,8 @@ namespace Araç_otomasyonu
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ComboBox ctxtmusteri;
-        public System.Windows.Forms.DateTimePicker gTime;
-        public System.Windows.Forms.DateTimePicker dgun;
         public Guna.UI2.WinForms.Guna2ComboBox ctxtAP;
+        private Guna.UI2.WinForms.Guna2DateTimePicker gTime;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dgun;
     }
 }

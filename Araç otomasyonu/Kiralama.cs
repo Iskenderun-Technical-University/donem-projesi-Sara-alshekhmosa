@@ -46,9 +46,13 @@ namespace Araç_otomasyonu
             ctxtAP.DataSource = dt;
             con.Close();
         }
+        private void updateonRent()
+        {
+           
+        }
         private void Kiralama_Load(object sender, EventArgs e)
         {
-            fillcombo();
+             fillcombo();
             fillcustomer();
             populate();
         }
@@ -124,6 +128,16 @@ namespace Araç_otomasyonu
         private void btnİp_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DateTimePicker1_ValueChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
