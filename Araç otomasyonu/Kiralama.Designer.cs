@@ -84,6 +84,7 @@ namespace Araç_otomasyonu
             this.btnGun.Size = new System.Drawing.Size(106, 45);
             this.btnGun.TabIndex = 87;
             this.btnGun.Text = "Güncelle";
+       
             // 
             // btnSil
             // 
@@ -111,6 +112,7 @@ namespace Araç_otomasyonu
             this.txtId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtId.ForeColor = System.Drawing.Color.Black;
             this.txtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtId.Location = new System.Drawing.Point(152, 32);
             this.txtId.Name = "txtId";
@@ -130,9 +132,10 @@ namespace Araç_otomasyonu
             this.dgv3.Name = "dgv3";
             this.dgv3.RowHeadersWidth = 51;
             this.dgv3.RowTemplate.Height = 26;
-            this.dgv3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgv3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv3.Size = new System.Drawing.Size(539, 439);
             this.dgv3.TabIndex = 95;
+      
             // 
             // btnEk
             // 
@@ -185,9 +188,9 @@ namespace Araç_otomasyonu
             this.üceret.ForeColor = System.Drawing.Color.White;
             this.üceret.Location = new System.Drawing.Point(21, 337);
             this.üceret.Name = "üceret";
-            this.üceret.Size = new System.Drawing.Size(85, 20);
+            this.üceret.Size = new System.Drawing.Size(106, 20);
             this.üceret.TabIndex = 79;
-            this.üceret.Text = "Ücretler";
+            this.üceret.Text = "kira ücreti";
             // 
             // label3
             // 
@@ -262,7 +265,7 @@ namespace Araç_otomasyonu
             this.ctxtAP.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ctxtAP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ctxtAP.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctxtAP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ctxtAP.ForeColor = System.Drawing.Color.Black;
             this.ctxtAP.ItemHeight = 30;
             this.ctxtAP.Items.AddRange(new object[] {
             "evet",
@@ -327,7 +330,7 @@ namespace Araç_otomasyonu
             this.ctxtmusteri.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ctxtmusteri.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ctxtmusteri.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctxtmusteri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ctxtmusteri.ForeColor = System.Drawing.Color.Black;
             this.ctxtmusteri.ItemHeight = 30;
             this.ctxtmusteri.Items.AddRange(new object[] {
             "evet",
@@ -342,7 +345,9 @@ namespace Araç_otomasyonu
             // 
             this.gTime.Checked = true;
             this.gTime.CustomFormat = "dd-MM-yyyy";
+            this.gTime.FillColor = System.Drawing.Color.Maroon;
             this.gTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gTime.ForeColor = System.Drawing.Color.Black;
             this.gTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.gTime.Location = new System.Drawing.Point(149, 237);
             this.gTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -351,13 +356,15 @@ namespace Araç_otomasyonu
             this.gTime.Size = new System.Drawing.Size(200, 36);
             this.gTime.TabIndex = 97;
             this.gTime.Value = new System.DateTime(2023, 6, 1, 23, 29, 33, 582);
-            this.gTime.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged_1);
+        
             // 
             // dgun
             // 
             this.dgun.Checked = true;
             this.dgun.CustomFormat = "dd-MM-yyyy";
+            this.dgun.FillColor = System.Drawing.Color.Maroon;
             this.dgun.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgun.ForeColor = System.Drawing.Color.Black;
             this.dgun.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dgun.Location = new System.Drawing.Point(149, 287);
             this.dgun.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);

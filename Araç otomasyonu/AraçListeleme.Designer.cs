@@ -158,8 +158,8 @@ namespace Araç_otomasyonu
             this.ctxtMe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ctxtMe.ItemHeight = 30;
             this.ctxtMe.Items.AddRange(new object[] {
-            "evet",
-            "hayır"});
+            "Evet",
+            "hayir"});
             this.ctxtMe.Location = new System.Drawing.Point(120, 265);
             this.ctxtMe.Name = "ctxtMe";
             this.ctxtMe.Size = new System.Drawing.Size(148, 36);

@@ -35,7 +35,7 @@ namespace Araç_otomasyonu
         private void fillcombo()
         {
             con.Open();
-            string query = "select  plaka from araç";
+            string query = "select  plaka from araç where mevcut = '" + "Evet" +"'";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
@@ -48,7 +48,13 @@ namespace Araç_otomasyonu
         }
         private void updateonRent()
         {
-           
+            con.Open();
+            string query = "update araç set  mevcut ='" + "hayir" + "' where plaka = " + ctxtAP.SelectedValue.ToString() + ";";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+           // MessageBox.Show("araç güncellendi");
+            con.Close();
+
         }
         private void Kiralama_Load(object sender, EventArgs e)
         {
@@ -114,7 +120,7 @@ namespace Araç_otomasyonu
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("araç kiralandı");
                     con.Close();
-
+                    updateonRent();
                     populate();
                 }
                 catch (Exception myex)
@@ -130,14 +136,6 @@ namespace Araç_otomasyonu
             this.Close();
         }
 
-        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DateTimePicker1_ValueChanged_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
