@@ -338,8 +338,8 @@ namespace Araç_otomasyonu
             this.güncell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.güncell.ItemHeight = 30;
             this.güncell.Items.AddRange(new object[] {
-            "Evet",
-            "hayir"});
+            "mevcut",
+            "kiralandı"});
             this.güncell.Location = new System.Drawing.Point(626, 2);
             this.güncell.Name = "güncell";
             this.güncell.Size = new System.Drawing.Size(148, 36);
