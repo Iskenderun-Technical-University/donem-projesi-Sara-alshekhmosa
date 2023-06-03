@@ -58,6 +58,20 @@ namespace Araç_otomasyonu
                 }
             }
         }
+        private void fillAvailable()
+        {
+            con.Open();
+            string query = "select  plaka from araç where mevcut = '" + "Evet" + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("plaka", typeof(string));
+            dt.Load(rdr);
+            güncell.ValueMember = "plaka";
+            güncell.DataSource = dt;
+            con.Close();
+        }
 
         private void AraçListeleme_Load(object sender, EventArgs e)
         {
