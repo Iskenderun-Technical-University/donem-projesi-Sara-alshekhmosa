@@ -46,6 +46,8 @@ namespace Araç_otomasyonu
             this.btnEk2 = new Guna.UI2.WinForms.Guna2Button();
             this.txtPA = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.güncell = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +79,7 @@ namespace Araç_otomasyonu
             this.btnGu2.Name = "btnGu2";
             this.btnGu2.Size = new System.Drawing.Size(102, 26);
             this.btnGu2.TabIndex = 64;
-            this.btnGu2.Text = "Güncelle";
+            this.btnGu2.Text = "düzenleme";
             this.btnGu2.Click += new System.EventHandler(this.btnGu2_Click);
             // 
             // btnİp4
@@ -323,12 +325,50 @@ namespace Araç_otomasyonu
             this.label2.TabIndex = 74;
             this.label2.Text = "Plaka Ara";
             // 
+            // güncell
+            // 
+            this.güncell.AutoRoundedCorners = true;
+            this.güncell.BackColor = System.Drawing.Color.Transparent;
+            this.güncell.BorderRadius = 17;
+            this.güncell.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.güncell.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.güncell.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.güncell.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.güncell.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.güncell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.güncell.ItemHeight = 30;
+            this.güncell.Items.AddRange(new object[] {
+            "Evet",
+            "hayir"});
+            this.güncell.Location = new System.Drawing.Point(626, 2);
+            this.güncell.Name = "güncell";
+            this.güncell.Size = new System.Drawing.Size(148, 36);
+            this.güncell.TabIndex = 75;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Maroon;
+            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(780, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(102, 26);
+            this.guna2Button1.TabIndex = 76;
+            this.guna2Button1.Text = "güncelle";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
             // AraçListeleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(982, 551);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.güncell);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPA);
             this.Controls.Add(this.btnEk2);
@@ -377,5 +417,7 @@ namespace Araç_otomasyonu
         private Guna.UI2.WinForms.Guna2Button btnEk2;
         private Guna.UI2.WinForms.Guna2TextBox txtPA;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2ComboBox güncell;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
