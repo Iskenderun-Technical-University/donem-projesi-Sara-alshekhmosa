@@ -176,8 +176,9 @@ namespace Araç_otomasyonu
         {
             txtId.Text = dgv3.SelectedRows[0].Cells[0].Value.ToString();
             ctxtAP.SelectedValue = dgv3.SelectedRows[0].Cells[1].Value.ToString();
-            ctxtmusteri.Text = dgv3.SelectedRows[0].Cells[2].Value.ToString();
-            txtId.Text = dgv3.SelectedRows[0].Cells[0].Value.ToString();
+           // txtAd2.Text = dgv3.SelectedRows[0].Cells[3].Value.ToString();
+            txtuc.Text = dgv3.SelectedRows[0].Cells[5].Value.ToString();
+           
         }
     }
 }
