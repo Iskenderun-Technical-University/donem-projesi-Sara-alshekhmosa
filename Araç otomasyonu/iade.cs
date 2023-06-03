@@ -52,8 +52,8 @@ namespace Araç_otomasyonu
             int NrOfDays = Convert.ToInt32(t.TotalDays);
             if(NrOfDays<=0)
             {
-                gecikme.Text = "0";
-                txtiyi.Text = "No Fine";
+                gecikme.Text = "gecikme yok ";
+                txtiyi.Text = "iyi değil";
             }
             else
             {

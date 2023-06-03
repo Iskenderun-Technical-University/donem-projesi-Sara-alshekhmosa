@@ -49,7 +49,7 @@ namespace Araç_otomasyonu
         private void updateonRent()
         {
             con.Open();
-            string query = "update araç set  mevcut ='" + "hayir" + "' where plaka = " + ctxtAP.SelectedValue.ToString() + ";";
+            string query = "update araç set  mevcut ='" + "hayir" + "' where plaka = '" + ctxtAP.SelectedValue.ToString() + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
            // MessageBox.Show("araç güncellendi");
@@ -59,7 +59,7 @@ namespace Araç_otomasyonu
         private void updateonRentdelete()
         {
             con.Open();
-            string query = "update araç set  mevcut ='" + "Evet" + "' where plaka = " + ctxtAP.SelectedValue.ToString() + ";";
+            string query = "update araç set  mevcut ='" + "Evet" + "' where plaka ='" + ctxtAP.SelectedValue.ToString() + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             // MessageBox.Show("araç güncellendi");
