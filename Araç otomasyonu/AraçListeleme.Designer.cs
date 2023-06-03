@@ -344,6 +344,7 @@ namespace Araç_otomasyonu
             this.güncell.Name = "güncell";
             this.güncell.Size = new System.Drawing.Size(148, 36);
             this.güncell.TabIndex = 75;
+            this.güncell.SelectionChangeCommitted += new System.EventHandler(this.güncell_SelectionChangeCommitted);
             // 
             // guna2Button1
             // 

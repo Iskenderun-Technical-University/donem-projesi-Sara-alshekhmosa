@@ -151,6 +151,23 @@ namespace Araç_otomasyonu
         {
             populate();
         }
+
+        private void güncell_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string flag = "";
+            if(güncell.SelectedItem.ToString()== "mevcut")
+            {
+                flag = "Evet";
+            }
+            con.Open();
+            string query = "Select *from araç";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(da);
+            var ds = new DataSet();
+            da.Fill(ds);
+            dgv2.DataSource = ds.Tables[0];
+            con.Close();
+        }
     }
     }
 
