@@ -61,14 +61,14 @@ namespace Araç_otomasyonu
         private void fillAvailable()
         {
             con.Open();
-            string query = "select  plaka from araç where mevcut = '" + "Evet" + "'";
+            string query = "select mevcut from araç";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
-            dt.Columns.Add("plaka", typeof(string));
+            dt.Columns.Add("mevcut", typeof(string));
             dt.Load(rdr);
-            güncell.ValueMember = "plaka";
+            güncell.ValueMember = "mevcut";
             güncell.DataSource = dt;
             con.Close();
         }
@@ -76,6 +76,7 @@ namespace Araç_otomasyonu
         private void AraçListeleme_Load(object sender, EventArgs e)
         {
             populate();
+            fillAvailable();
         }
 
         private void btnİp4_Click(object sender, EventArgs e)
