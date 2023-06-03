@@ -31,7 +31,6 @@ namespace Araç_otomasyonu
         {
             this.btnka2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnİp3 = new Guna.UI2.WinForms.Guna2Button();
-            this.iadetarihi = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtId2 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,6 +45,7 @@ namespace Araç_otomasyonu
             this.araçplakası = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv4 = new System.Windows.Forms.DataGridView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.gTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv4)).BeginInit();
             this.SuspendLayout();
@@ -83,13 +83,6 @@ namespace Araç_otomasyonu
             this.btnİp3.Text = "İptal";
             this.btnİp3.Click += new System.EventHandler(this.btnİp3_Click);
             // 
-            // iadetarihi
-            // 
-            this.iadetarihi.Location = new System.Drawing.Point(161, 246);
-            this.iadetarihi.Name = "iadetarihi";
-            this.iadetarihi.Size = new System.Drawing.Size(194, 24);
-            this.iadetarihi.TabIndex = 111;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -106,7 +99,7 @@ namespace Araç_otomasyonu
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 151);
+            this.label2.Location = new System.Drawing.Point(14, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 107;
@@ -128,7 +121,7 @@ namespace Araç_otomasyonu
             this.txtId2.PasswordChar = '\0';
             this.txtId2.PlaceholderText = "";
             this.txtId2.SelectedText = "";
-            this.txtId2.Size = new System.Drawing.Size(197, 32);
+            this.txtId2.Size = new System.Drawing.Size(197, 28);
             this.txtId2.TabIndex = 105;
             // 
             // lblAd
@@ -136,7 +129,7 @@ namespace Araç_otomasyonu
             this.lblAd.AutoSize = true;
             this.lblAd.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAd.ForeColor = System.Drawing.Color.White;
-            this.lblAd.Location = new System.Drawing.Point(35, 206);
+            this.lblAd.Location = new System.Drawing.Point(35, 187);
             this.lblAd.Name = "lblAd";
             this.lblAd.Size = new System.Drawing.Size(92, 20);
             this.lblAd.TabIndex = 104;
@@ -147,7 +140,7 @@ namespace Araç_otomasyonu
             this.üceret.AutoSize = true;
             this.üceret.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.üceret.ForeColor = System.Drawing.Color.White;
-            this.üceret.Location = new System.Drawing.Point(35, 355);
+            this.üceret.Location = new System.Drawing.Point(52, 351);
             this.üceret.Name = "üceret";
             this.üceret.Size = new System.Drawing.Size(35, 20);
             this.üceret.TabIndex = 103;
@@ -158,7 +151,7 @@ namespace Araç_otomasyonu
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 250);
+            this.label3.Location = new System.Drawing.Point(18, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 102;
@@ -169,7 +162,7 @@ namespace Araç_otomasyonu
             this.lblid.AutoSize = true;
             this.lblid.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblid.ForeColor = System.Drawing.Color.White;
-            this.lblid.Location = new System.Drawing.Point(33, 301);
+            this.lblid.Location = new System.Drawing.Point(19, 293);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(105, 25);
             this.lblid.TabIndex = 101;
@@ -188,7 +181,7 @@ namespace Araç_otomasyonu
             this.txtAd3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAd3.ForeColor = System.Drawing.Color.Black;
             this.txtAd3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAd3.Location = new System.Drawing.Point(162, 198);
+            this.txtAd3.Location = new System.Drawing.Point(162, 187);
             this.txtAd3.Name = "txtAd3";
             this.txtAd3.PasswordChar = '\0';
             this.txtAd3.PlaceholderText = "";
@@ -209,7 +202,7 @@ namespace Araç_otomasyonu
             this.txtiyi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtiyi.ForeColor = System.Drawing.Color.Black;
             this.txtiyi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtiyi.Location = new System.Drawing.Point(161, 355);
+            this.txtiyi.Location = new System.Drawing.Point(161, 354);
             this.txtiyi.Name = "txtiyi";
             this.txtiyi.PasswordChar = '\0';
             this.txtiyi.PlaceholderText = "";
@@ -245,7 +238,7 @@ namespace Araç_otomasyonu
             this.gecikme.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gecikme.ForeColor = System.Drawing.Color.Black;
             this.gecikme.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gecikme.Location = new System.Drawing.Point(161, 298);
+            this.gecikme.Location = new System.Drawing.Point(162, 301);
             this.gecikme.Name = "gecikme";
             this.gecikme.PasswordChar = '\0';
             this.gecikme.PlaceholderText = "";
@@ -265,7 +258,7 @@ namespace Araç_otomasyonu
             this.araçplakası.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.araçplakası.ForeColor = System.Drawing.Color.Black;
             this.araçplakası.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.araçplakası.Location = new System.Drawing.Point(162, 143);
+            this.araçplakası.Location = new System.Drawing.Point(162, 134);
             this.araçplakası.Name = "araçplakası";
             this.araçplakası.PasswordChar = '\0';
             this.araçplakası.PlaceholderText = "";
@@ -297,11 +290,27 @@ namespace Araç_otomasyonu
             this.guna2Button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(59, 389);
+            this.guna2Button1.Location = new System.Drawing.Point(116, 470);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(103, 26);
             this.guna2Button1.TabIndex = 118;
             this.guna2Button1.Text = "İptal";
+            // 
+            // gTime
+            // 
+            this.gTime.Checked = true;
+            this.gTime.CustomFormat = "dd-MM-yyyy";
+            this.gTime.FillColor = System.Drawing.Color.Maroon;
+            this.gTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gTime.ForeColor = System.Drawing.Color.Black;
+            this.gTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.gTime.Location = new System.Drawing.Point(159, 240);
+            this.gTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gTime.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gTime.Name = "gTime";
+            this.gTime.Size = new System.Drawing.Size(200, 36);
+            this.gTime.TabIndex = 119;
+            this.gTime.Value = new System.DateTime(2023, 6, 1, 23, 29, 33, 582);
             // 
             // iade
             // 
@@ -309,12 +318,12 @@ namespace Araç_otomasyonu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(934, 508);
+            this.Controls.Add(this.gTime);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.dgv4);
             this.Controls.Add(this.araçplakası);
             this.Controls.Add(this.gecikme);
             this.Controls.Add(this.dgv3);
-            this.Controls.Add(this.iadetarihi);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtId2);
@@ -340,7 +349,6 @@ namespace Araç_otomasyonu
         #endregion
         private Guna.UI2.WinForms.Guna2Button btnka2;
         private Guna.UI2.WinForms.Guna2Button btnİp3;
-        public System.Windows.Forms.DateTimePicker iadetarihi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtId2;
@@ -355,5 +363,6 @@ namespace Araç_otomasyonu
         public Guna.UI2.WinForms.Guna2TextBox araçplakası;
         public System.Windows.Forms.DataGridView dgv4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker gTime;
     }
 }
