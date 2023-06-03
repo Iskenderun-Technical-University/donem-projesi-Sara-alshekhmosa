@@ -56,6 +56,16 @@ namespace Araç_otomasyonu
             con.Close();
 
         }
+        private void updateonRentdelete()
+        {
+            con.Open();
+            string query = "update araç set  mevcut ='" + "Evet" + "' where plaka = " + ctxtAP.SelectedValue.ToString() + ";";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            // MessageBox.Show("araç güncellendi");
+            con.Close();
+
+        }
         private void Kiralama_Load(object sender, EventArgs e)
         {
              fillcombo();
@@ -136,6 +146,38 @@ namespace Araç_otomasyonu
             this.Close();
         }
 
-        
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if (txtId.Text == "")
+            {
+                MessageBox.Show("Eksik bilgi");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "delete from kira where id ='" + txtId.Text + "';";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("kiralama silindi");
+                    con.Close();
+                    populate();
+                    updateonRentdelete();
+                }
+                catch (Exception myex)
+                {
+                    MessageBox.Show(myex.Message);
+                }
+            }
+        }
+
+        private void dgv3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtId.Text = dgv3.SelectedRows[0].Cells[0].Value.ToString();
+            ctxtAP.SelectedValue = dgv3.SelectedRows[0].Cells[1].Value.ToString();
+            ctxtmusteri.Text = dgv3.SelectedRows[0].Cells[2].Value.ToString();
+            txtId.Text = dgv3.SelectedRows[0].Cells[0].Value.ToString();
+        }
     }
 }

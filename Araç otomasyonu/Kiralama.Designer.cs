@@ -84,7 +84,6 @@ namespace Araç_otomasyonu
             this.btnGun.Size = new System.Drawing.Size(106, 45);
             this.btnGun.TabIndex = 87;
             this.btnGun.Text = "Güncelle";
-       
             // 
             // btnSil
             // 
@@ -101,6 +100,7 @@ namespace Araç_otomasyonu
             this.btnSil.Size = new System.Drawing.Size(68, 26);
             this.btnSil.TabIndex = 86;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // txtId
             // 
@@ -135,7 +135,7 @@ namespace Araç_otomasyonu
             this.dgv3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv3.Size = new System.Drawing.Size(539, 439);
             this.dgv3.TabIndex = 95;
-      
+            this.dgv3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv3_CellContentClick);
             // 
             // btnEk
             // 
@@ -356,7 +356,6 @@ namespace Araç_otomasyonu
             this.gTime.Size = new System.Drawing.Size(200, 36);
             this.gTime.TabIndex = 97;
             this.gTime.Value = new System.DateTime(2023, 6, 1, 23, 29, 33, 582);
-        
             // 
             // dgun
             // 
