@@ -33,27 +33,52 @@ namespace Araç_otomasyonu
             con.Close();
 
         }
+        public void populateRet()
+        {
+            con.Open();
+            string query = "Select *from iade";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(da);
+            var ds = new DataSet();
+            da.Fill(ds);
+            dgv4.DataSource = ds.Tables[0];
+            con.Close();
 
-      
+        }
+        private void deleteOnReturn()
+        {
+            int rentid;
+            rentid = Convert.ToInt32(dgv3.SelectedRows[0].Cells[0].Value.ToString());
+            con.Open();
+            string query = "delete from kira where id ='" + rentid + "';";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+           // MessageBox.Show("kiralama silindi");
+            con.Close();
+            populate();
+            
+        }
+
 
         private void iade_Load(object sender, EventArgs e)
         {
             populate();
+            populateRet();
         }
 
         private void dgv3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             araçplakası.Text = dgv3.SelectedRows[0].Cells[1].Value.ToString();
-            txtAd3.Text= dgv3.SelectedRows[0].Cells[2].Value.ToString();
-            iadetarihi.Text= dgv3.SelectedRows[0].Cells[4].Value.ToString();
-            DateTime d1 = iadetarihi.Value.Date;
+            txtAd2.Text= dgv3.SelectedRows[0].Cells[2].Value.ToString();
+            gTime.Text= dgv3.SelectedRows[0].Cells[4].Value.ToString();
+            DateTime d1 = gTime.Value.Date;
             DateTime d2 = DateTime.Now;
             TimeSpan t = d2 - d1;
             int NrOfDays = Convert.ToInt32(t.TotalDays);
             if(NrOfDays<=0)
             {
                 gecikme.Text = "gecikme yok ";
-                txtiyi.Text = "iyi değil";
+                txtiyi.Text = "0";
             }
             else
             {
@@ -74,7 +99,31 @@ namespace Araç_otomasyonu
 
         private void btnka2_Click(object sender, EventArgs e)
         {
-           
+            if (txtId.Text == "" || txtAd2.Text == "" || gecikme.Text == ""|| txtiyi.Text=="")
+            {
+                MessageBox.Show("Eksik bilgi");
+
+
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "insert into iade  values (" + txtId.Text + ",'" + araçplakası.Text + "','" + txtAd2.Text + "','" + gTime.Text + "','" + gecikme.Text + "','" + txtiyi.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("araç iade edildi");
+                    con.Close();
+                   // updateonRent();
+                    populateRet();
+                    deleteOnReturn();
+                }
+                catch (Exception myex)
+                {
+                    MessageBox.Show(myex.Message);
+                }
+            }
 
         }
     }
