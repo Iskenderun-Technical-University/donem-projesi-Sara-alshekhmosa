@@ -81,7 +81,9 @@ namespace Araç_otomasyonu
 
         private void btnİp4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            AnaSyafa ana = new AnaSyafa();
+            ana.Show();
         }
 
         private void btnSil2_Click(object sender, EventArgs e)
@@ -98,7 +100,7 @@ namespace Araç_otomasyonu
                     string query = "delete from araç where plaka ='" + txtPA.Text + "';";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("müşteri silindi");
+                    MessageBox.Show("araç silindi");
                     con.Close();
                     populate();
 
@@ -159,8 +161,12 @@ namespace Araç_otomasyonu
             {
                 flag = "Evet";
             }
+            else
+            {
+                flag = "hayir";
+            }
             con.Open();
-            string query = "Select *from araç";
+            string query = "Select *from araç where mevcut = '" + flag + "'";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(da);
             var ds = new DataSet();

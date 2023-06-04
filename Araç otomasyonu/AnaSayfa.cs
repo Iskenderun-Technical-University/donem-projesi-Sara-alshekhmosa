@@ -24,7 +24,9 @@ namespace Araç_otomasyonu
 
         private void btnME_Click(object sender, EventArgs e)
         {
-            Program.musteriekleme.Show();
+            this.Hide();
+            MüşteriEkleme müşteriEkleme = new MüşteriEkleme(); 
+            müşteriEkleme.Show();
         }
 
         private void btnCi_Click(object sender, EventArgs e)
@@ -35,23 +37,28 @@ namespace Araç_otomasyonu
        
         private void btnAk_Click(object sender, EventArgs e)
         {
-            Program.iadee.Show();
+            this.Hide();
+            iade iade = new iade();
+                 
+            iade.Show();
         }
 
         private void btnAl_Click(object sender, EventArgs e)
         {
-            Program.araclisteleme.Show();
+            this.Hide();
+            AraçListeleme araçListeleme = new AraçListeleme();
+            araçListeleme.Show();
 
         }
 
         private void btnSo_Click(object sender, EventArgs e)
         {
-            Program.kiralama.Show();
+            this.Hide();
+            Kiralama kiralama = new Kiralama();
+
+            kiralama.Show();
         }
 
-        private void btnSa_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

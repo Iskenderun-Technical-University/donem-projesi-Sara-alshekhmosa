@@ -57,12 +57,12 @@ namespace Araç_otomasyonu
             this.dgv2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv2.GridColor = System.Drawing.Color.Maroon;
-            this.dgv2.Location = new System.Drawing.Point(288, 54);
+            this.dgv2.Location = new System.Drawing.Point(338, 54);
             this.dgv2.Name = "dgv2";
             this.dgv2.RowHeadersWidth = 51;
             this.dgv2.RowTemplate.Height = 26;
             this.dgv2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv2.Size = new System.Drawing.Size(587, 473);
+            this.dgv2.Size = new System.Drawing.Size(641, 463);
             this.dgv2.TabIndex = 0;
             this.dgv2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellContentClick);
             // 
@@ -75,7 +75,7 @@ namespace Araç_otomasyonu
             this.btnGu2.FillColor = System.Drawing.Color.Maroon;
             this.btnGu2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGu2.ForeColor = System.Drawing.Color.White;
-            this.btnGu2.Location = new System.Drawing.Point(12, 335);
+            this.btnGu2.Location = new System.Drawing.Point(154, 319);
             this.btnGu2.Name = "btnGu2";
             this.btnGu2.Size = new System.Drawing.Size(102, 26);
             this.btnGu2.TabIndex = 64;
@@ -92,11 +92,11 @@ namespace Araç_otomasyonu
             this.btnİp4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnİp4.ForeColor = System.Drawing.Color.White;
             this.btnİp4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnİp4.Location = new System.Drawing.Point(161, 335);
+            this.btnİp4.Location = new System.Drawing.Point(15, 501);
             this.btnİp4.Name = "btnİp4";
             this.btnİp4.Size = new System.Drawing.Size(107, 26);
             this.btnİp4.TabIndex = 63;
-            this.btnİp4.Text = "İptal";
+            this.btnİp4.Text = "geri dön";
             this.btnİp4.Click += new System.EventHandler(this.btnİp4_Click);
             // 
             // label9
@@ -217,7 +217,7 @@ namespace Araç_otomasyonu
             this.btnSil2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSil2.ForeColor = System.Drawing.Color.White;
             this.btnSil2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSil2.Location = new System.Drawing.Point(188, 501);
+            this.btnSil2.Location = new System.Drawing.Point(214, 428);
             this.btnSil2.Name = "btnSil2";
             this.btnSil2.Size = new System.Drawing.Size(68, 26);
             this.btnSil2.TabIndex = 67;
@@ -286,7 +286,7 @@ namespace Araç_otomasyonu
             this.btnEk2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEk2.ForeColor = System.Drawing.Color.White;
             this.btnEk2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEk2.Location = new System.Drawing.Point(82, 367);
+            this.btnEk2.Location = new System.Drawing.Point(26, 319);
             this.btnEk2.Name = "btnEk2";
             this.btnEk2.Size = new System.Drawing.Size(107, 26);
             this.btnEk2.TabIndex = 72;
@@ -305,7 +305,7 @@ namespace Araç_otomasyonu
             this.txtPA.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPA.ForeColor = System.Drawing.Color.Black;
             this.txtPA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPA.Location = new System.Drawing.Point(108, 452);
+            this.txtPA.Location = new System.Drawing.Point(120, 392);
             this.txtPA.Name = "txtPA";
             this.txtPA.PasswordChar = '\0';
             this.txtPA.PlaceholderText = "";
@@ -319,7 +319,7 @@ namespace Araç_otomasyonu
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(18, 452);
+            this.label2.Location = new System.Drawing.Point(23, 392);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 74;
@@ -340,7 +340,7 @@ namespace Araç_otomasyonu
             this.güncell.Items.AddRange(new object[] {
             "mevcut",
             "kiralandı"});
-            this.güncell.Location = new System.Drawing.Point(626, 2);
+            this.güncell.Location = new System.Drawing.Point(732, 12);
             this.güncell.Name = "güncell";
             this.güncell.Size = new System.Drawing.Size(148, 36);
             this.güncell.TabIndex = 75;
@@ -355,7 +355,7 @@ namespace Araç_otomasyonu
             this.guna2Button1.FillColor = System.Drawing.Color.Maroon;
             this.guna2Button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(780, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(897, 22);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(102, 26);
             this.guna2Button1.TabIndex = 76;
@@ -367,7 +367,7 @@ namespace Araç_otomasyonu
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(982, 551);
+            this.ClientSize = new System.Drawing.Size(1031, 542);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.güncell);
             this.Controls.Add(this.label2);

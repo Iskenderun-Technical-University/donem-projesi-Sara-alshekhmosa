@@ -37,7 +37,9 @@ namespace Araç_otomasyonu
 
         private void btnİp_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            AnaSyafa ana = new AnaSyafa();
+            ana.Show();
         }
       
         public void btnEk_Click(object sender, EventArgs e)

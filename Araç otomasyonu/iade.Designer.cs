@@ -38,14 +38,13 @@ namespace Araç_otomasyonu
             this.üceret = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
-            this.txtAd2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtiyi = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv3 = new System.Windows.Forms.DataGridView();
-            this.gecikme = new Guna.UI2.WinForms.Guna2TextBox();
             this.araçplakası = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv4 = new System.Windows.Forms.DataGridView();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.gTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtiyi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gecikme = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtAd2 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv4)).BeginInit();
             this.SuspendLayout();
@@ -59,11 +58,11 @@ namespace Araç_otomasyonu
             this.btnka2.FillColor = System.Drawing.Color.Maroon;
             this.btnka2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnka2.ForeColor = System.Drawing.Color.White;
-            this.btnka2.Location = new System.Drawing.Point(59, 427);
+            this.btnka2.Location = new System.Drawing.Point(257, 424);
             this.btnka2.Name = "btnka2";
             this.btnka2.Size = new System.Drawing.Size(97, 26);
             this.btnka2.TabIndex = 46;
-            this.btnka2.Text = "Kayıt";
+            this.btnka2.Text = "Ekle";
             this.btnka2.Click += new System.EventHandler(this.btnka2_Click);
             // 
             // btnİp3
@@ -76,11 +75,11 @@ namespace Araç_otomasyonu
             this.btnİp3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnİp3.ForeColor = System.Drawing.Color.White;
             this.btnİp3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnİp3.Location = new System.Drawing.Point(179, 427);
+            this.btnİp3.Location = new System.Drawing.Point(12, 504);
             this.btnİp3.Name = "btnİp3";
             this.btnİp3.Size = new System.Drawing.Size(103, 26);
             this.btnİp3.TabIndex = 45;
-            this.btnİp3.Text = "İptal";
+            this.btnİp3.Text = "geri dön";
             this.btnİp3.Click += new System.EventHandler(this.btnİp3_Click);
             // 
             // label5
@@ -168,83 +167,20 @@ namespace Araç_otomasyonu
             this.lblid.TabIndex = 101;
             this.lblid.Text = "gecikme";
             // 
-            // txtAd2
-            // 
-            this.txtAd2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAd2.DefaultText = "";
-            this.txtAd2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAd2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAd2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAd2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAd2.Enabled = false;
-            this.txtAd2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAd2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAd2.ForeColor = System.Drawing.Color.Black;
-            this.txtAd2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAd2.Location = new System.Drawing.Point(162, 187);
-            this.txtAd2.Name = "txtAd2";
-            this.txtAd2.PasswordChar = '\0';
-            this.txtAd2.PlaceholderText = "";
-            this.txtAd2.SelectedText = "";
-            this.txtAd2.Size = new System.Drawing.Size(193, 28);
-            this.txtAd2.TabIndex = 100;
-            // 
-            // txtiyi
-            // 
-            this.txtiyi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtiyi.DefaultText = "";
-            this.txtiyi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtiyi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtiyi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtiyi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtiyi.Enabled = false;
-            this.txtiyi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtiyi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtiyi.ForeColor = System.Drawing.Color.Black;
-            this.txtiyi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtiyi.Location = new System.Drawing.Point(161, 354);
-            this.txtiyi.Name = "txtiyi";
-            this.txtiyi.PasswordChar = '\0';
-            this.txtiyi.PlaceholderText = "";
-            this.txtiyi.SelectedText = "";
-            this.txtiyi.Size = new System.Drawing.Size(193, 28);
-            this.txtiyi.TabIndex = 99;
-            // 
             // dgv3
             // 
             this.dgv3.BackgroundColor = System.Drawing.Color.White;
             this.dgv3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv3.GridColor = System.Drawing.Color.Maroon;
-            this.dgv3.Location = new System.Drawing.Point(380, 62);
+            this.dgv3.Location = new System.Drawing.Point(380, 27);
             this.dgv3.Name = "dgv3";
             this.dgv3.RowHeadersWidth = 51;
             this.dgv3.RowTemplate.Height = 26;
             this.dgv3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv3.Size = new System.Drawing.Size(529, 170);
+            this.dgv3.Size = new System.Drawing.Size(639, 220);
             this.dgv3.TabIndex = 113;
             this.dgv3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv3_CellContentClick);
-            // 
-            // gecikme
-            // 
-            this.gecikme.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gecikme.DefaultText = "";
-            this.gecikme.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gecikme.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gecikme.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gecikme.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gecikme.Enabled = false;
-            this.gecikme.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gecikme.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gecikme.ForeColor = System.Drawing.Color.Black;
-            this.gecikme.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gecikme.Location = new System.Drawing.Point(162, 301);
-            this.gecikme.Name = "gecikme";
-            this.gecikme.PasswordChar = '\0';
-            this.gecikme.PlaceholderText = "";
-            this.gecikme.SelectedText = "";
-            this.gecikme.Size = new System.Drawing.Size(193, 28);
-            this.gecikme.TabIndex = 115;
             // 
             // araçplakası
             // 
@@ -272,29 +208,13 @@ namespace Araç_otomasyonu
             this.dgv4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv4.GridColor = System.Drawing.Color.Maroon;
-            this.dgv4.Location = new System.Drawing.Point(380, 298);
+            this.dgv4.Location = new System.Drawing.Point(380, 283);
             this.dgv4.Name = "dgv4";
             this.dgv4.RowHeadersWidth = 51;
             this.dgv4.RowTemplate.Height = 26;
             this.dgv4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgv4.Size = new System.Drawing.Size(529, 170);
+            this.dgv4.Size = new System.Drawing.Size(631, 234);
             this.dgv4.TabIndex = 117;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Maroon;
-            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(116, 470);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(103, 26);
-            this.guna2Button1.TabIndex = 118;
-            this.guna2Button1.Text = "İptal";
             // 
             // gTime
             // 
@@ -312,17 +232,78 @@ namespace Araç_otomasyonu
             this.gTime.TabIndex = 119;
             this.gTime.Value = new System.DateTime(2023, 6, 1, 23, 29, 33, 582);
             // 
+            // txtiyi
+            // 
+            this.txtiyi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtiyi.DefaultText = "";
+            this.txtiyi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtiyi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtiyi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtiyi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtiyi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtiyi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtiyi.ForeColor = System.Drawing.Color.Black;
+            this.txtiyi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtiyi.Location = new System.Drawing.Point(166, 343);
+            this.txtiyi.Name = "txtiyi";
+            this.txtiyi.PasswordChar = '\0';
+            this.txtiyi.PlaceholderText = "";
+            this.txtiyi.SelectedText = "";
+            this.txtiyi.Size = new System.Drawing.Size(193, 28);
+            this.txtiyi.TabIndex = 120;
+            // 
+            // gecikme
+            // 
+            this.gecikme.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gecikme.DefaultText = "";
+            this.gecikme.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gecikme.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gecikme.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gecikme.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gecikme.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gecikme.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gecikme.ForeColor = System.Drawing.Color.Black;
+            this.gecikme.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gecikme.Location = new System.Drawing.Point(166, 293);
+            this.gecikme.Name = "gecikme";
+            this.gecikme.PasswordChar = '\0';
+            this.gecikme.PlaceholderText = "";
+            this.gecikme.SelectedText = "";
+            this.gecikme.Size = new System.Drawing.Size(193, 28);
+            this.gecikme.TabIndex = 121;
+            // 
+            // txtAd2
+            // 
+            this.txtAd2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAd2.DefaultText = "";
+            this.txtAd2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAd2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAd2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAd2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAd2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAd2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAd2.ForeColor = System.Drawing.Color.Black;
+            this.txtAd2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAd2.Location = new System.Drawing.Point(161, 187);
+            this.txtAd2.Name = "txtAd2";
+            this.txtAd2.PasswordChar = '\0';
+            this.txtAd2.PlaceholderText = "";
+            this.txtAd2.SelectedText = "";
+            this.txtAd2.Size = new System.Drawing.Size(193, 28);
+            this.txtAd2.TabIndex = 122;
+            // 
             // iade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(934, 508);
+            this.ClientSize = new System.Drawing.Size(1031, 542);
+            this.Controls.Add(this.txtAd2);
+            this.Controls.Add(this.gecikme);
+            this.Controls.Add(this.txtiyi);
             this.Controls.Add(this.gTime);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.dgv4);
             this.Controls.Add(this.araçplakası);
-            this.Controls.Add(this.gecikme);
             this.Controls.Add(this.dgv3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -331,8 +312,6 @@ namespace Araç_otomasyonu
             this.Controls.Add(this.üceret);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblid);
-            this.Controls.Add(this.txtAd2);
-            this.Controls.Add(this.txtiyi);
             this.Controls.Add(this.btnka2);
             this.Controls.Add(this.btnİp3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -356,13 +335,12 @@ namespace Araç_otomasyonu
         private System.Windows.Forms.Label üceret;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblid;
-        public Guna.UI2.WinForms.Guna2TextBox txtAd2;
-        public Guna.UI2.WinForms.Guna2TextBox txtiyi;
         public System.Windows.Forms.DataGridView dgv3;
-        public Guna.UI2.WinForms.Guna2TextBox gecikme;
         public Guna.UI2.WinForms.Guna2TextBox araçplakası;
         public System.Windows.Forms.DataGridView dgv4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2DateTimePicker gTime;
+        public Guna.UI2.WinForms.Guna2TextBox txtiyi;
+        public Guna.UI2.WinForms.Guna2TextBox gecikme;
+        public Guna.UI2.WinForms.Guna2TextBox txtAd2;
     }
 }

@@ -94,7 +94,9 @@ namespace Araç_otomasyonu
 
         private void btnİp3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            AnaSyafa ana = new AnaSyafa();
+            ana.Show();
         }
 
         private void btnka2_Click(object sender, EventArgs e)
@@ -124,6 +126,11 @@ namespace Araç_otomasyonu
                     MessageBox.Show(myex.Message);
                 }
             }
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

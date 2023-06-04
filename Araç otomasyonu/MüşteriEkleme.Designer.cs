@@ -216,11 +216,11 @@ namespace Araç_otomasyonu
             this.btnİp.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnİp.ForeColor = System.Drawing.Color.White;
             this.btnİp.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnİp.Location = new System.Drawing.Point(120, 285);
+            this.btnİp.Location = new System.Drawing.Point(17, 499);
             this.btnİp.Name = "btnİp";
-            this.btnİp.Size = new System.Drawing.Size(100, 45);
+            this.btnİp.Size = new System.Drawing.Size(109, 31);
             this.btnİp.TabIndex = 13;
-            this.btnİp.Text = "İptal";
+            this.btnİp.Text = "geri dön";
             this.btnİp.Click += new System.EventHandler(this.btnİp_Click);
             // 
             // btnEk
@@ -232,9 +232,9 @@ namespace Araç_otomasyonu
             this.btnEk.FillColor = System.Drawing.Color.Maroon;
             this.btnEk.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEk.ForeColor = System.Drawing.Color.White;
-            this.btnEk.Location = new System.Drawing.Point(12, 285);
+            this.btnEk.Location = new System.Drawing.Point(63, 285);
             this.btnEk.Name = "btnEk";
-            this.btnEk.Size = new System.Drawing.Size(102, 45);
+            this.btnEk.Size = new System.Drawing.Size(102, 33);
             this.btnEk.TabIndex = 14;
             this.btnEk.Text = "Ekle";
             this.btnEk.Click += new System.EventHandler(this.btnEk_Click);
@@ -250,7 +250,7 @@ namespace Araç_otomasyonu
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 26;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(539, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 482);
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -264,7 +264,7 @@ namespace Araç_otomasyonu
             this.btnSil.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSil.ForeColor = System.Drawing.Color.White;
             this.btnSil.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSil.Location = new System.Drawing.Point(161, 424);
+            this.btnSil.Location = new System.Drawing.Point(277, 389);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(68, 26);
             this.btnSil.TabIndex = 35;
@@ -281,23 +281,24 @@ namespace Araç_otomasyonu
             this.txtTA.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTA.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTA.ForeColor = System.Drawing.Color.Black;
             this.txtTA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTA.Location = new System.Drawing.Point(120, 386);
+            this.txtTA.Location = new System.Drawing.Point(139, 349);
             this.txtTA.Name = "txtTA";
             this.txtTA.PasswordChar = '\0';
             this.txtTA.PlaceholderText = "";
             this.txtTA.SelectedText = "";
-            this.txtTA.Size = new System.Drawing.Size(144, 16);
+            this.txtTA.Size = new System.Drawing.Size(193, 25);
             this.txtTA.TabIndex = 34;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(32, 386);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(50, 349);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
+            this.label1.Size = new System.Drawing.Size(76, 24);
             this.label1.TabIndex = 33;
             this.label1.Text = "TC Ara";
             // 
@@ -311,9 +312,9 @@ namespace Araç_otomasyonu
             this.btnGun.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGun.ForeColor = System.Drawing.Color.White;
             this.btnGun.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnGun.Location = new System.Drawing.Point(226, 285);
+            this.btnGun.Location = new System.Drawing.Point(194, 285);
             this.btnGun.Name = "btnGun";
-            this.btnGun.Size = new System.Drawing.Size(106, 45);
+            this.btnGun.Size = new System.Drawing.Size(106, 33);
             this.btnGun.TabIndex = 36;
             this.btnGun.Text = "Güncelle";
             this.btnGun.Click += new System.EventHandler(this.btnGun_Click);
@@ -323,7 +324,7 @@ namespace Araç_otomasyonu
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(917, 495);
+            this.ClientSize = new System.Drawing.Size(1031, 542);
             this.Controls.Add(this.btnGun);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.txtTA);

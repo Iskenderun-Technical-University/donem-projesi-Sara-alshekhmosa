@@ -143,7 +143,9 @@ namespace Araç_otomasyonu
 
         private void btnİp_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            AnaSyafa ana = new AnaSyafa();
+            ana.Show();
         }
 
         private void btnSil_Click(object sender, EventArgs e)

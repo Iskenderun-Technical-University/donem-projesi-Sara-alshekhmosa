@@ -8,12 +8,7 @@ namespace Araç_otomasyonu
 {
     static class Program
     {
-        public static AnaSyafa anasayfa;
-        public static MüşteriEkleme musteriekleme;
-      
-        public static iade iadee;
-        public static AraçListeleme araclisteleme;
-        public static Kiralama kiralama;
+       
 
         
         
@@ -27,12 +22,8 @@ namespace Araç_otomasyonu
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            anasayfa = new AnaSyafa();
-            musteriekleme = new MüşteriEkleme();
-        
-            iadee = new iade();
-            araclisteleme = new AraçListeleme();
-            kiralama = new Kiralama();
+           
+          
             Application.Run(new AnaSyafa());
         }
     }
